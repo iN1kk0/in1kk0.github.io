@@ -1,0 +1,811 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Fira Sans;
+    src: url(fonts/FiraSans-Bold.ttf);
+}
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Light_1.ttf);
+	src: url(fonts/OpenSans-Regular_1.ttf);
+	src: url(fonts/OpenSans-Semibold_1.ttf);
+}
+
+/*
+body {
+	font-family: OpenSans;
+	background-color:#edfafb;
+	margin: 0;
+}*/
+
+ul {
+    list-style-type:none;
+	padding: 0;
+}
+.logo-img {
+	width: 275px;
+	float: left;
+	position: absolute;
+	top: -41px;
+	margin-left: 31px;
+}
+
+.mobile-menu span{
+	font-family: Fira Sans;
+	font-weight: bold;
+	font-size: 30px;
+	color: #3980c9;
+	position: relative;
+    top: -2px;
+    left: 4px;
+}
+.title-header{
+	float: left;
+	margin-left: 149px;
+}
+.title-main {
+	font-family: Fira Sans;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+}
+.title-description {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #999999;
+	float: right;
+}
+.menu-list li a {
+	font-family: Fira Sans;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3980c9;
+	float: left;
+	padding-left: 0;
+	text-decoration: none;
+}
+.menu-list li a:hover {
+	color: #c81c85;
+}
+.menu-list li.active a {
+	color: black;
+}
+.phone {
+	font-family: Fira Sans;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	float:right;
+}
+.mail {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #3980c9;
+	float: left;
+}
+.phone-and-mail-footer{
+	float:right;
+}
+/*.mail:before {
+	content:url(images/mail.svg);
+	width: 18px;
+	height: 15px;
+	color: #3980c9;
+	}*/
+.clear {
+	clear:both;
+}	
+.call {
+	font-family: Open Sans;
+	font-size: 14px;
+	color: #c81c85;
+	letter-spacing: 3px;
+	border: 1px solid #c81c85;
+	border-radius: 20px;
+	padding: 13px 20px;
+	text-align: center;
+	float: right;
+	margin-left: 24px;
+}
+.call a{
+	text-decoration: none;
+	color: #c81c85;
+}
+.menu-list li {
+	float:left;
+}
+.fillings-txt {
+	background-image: url(images/Rectangle12.jpg);
+	font-family: Fira Sans;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	padding-top:35px;
+	padding-bottom:35px;
+	text-align:center;
+}
+.filling-link:hover {
+	color: #c81c85;
+	border-bottom: none;
+}
+.filling-link {
+	color: #3980c9;
+	text-decoration:none;
+	border-bottom: 1px dashed #3980c9;
+}
+.cake-examples-all {
+	max-width: 1218px;
+	margin: 0 auto;
+}
+.cake-examples-column {
+	width: 23.5%;
+    margin-right: 2%;
+	float: left;
+}
+.cake-examples-column:last-child{
+	margin-right: 0px;
+	clear: right;
+}
+.cake-example {
+	width: 100%;
+    margin-top: 30px;
+}
+.cake-img {
+	width: 100%;
+    height: auto;
+	border-radius: 7px;
+}
+.cake-example-header {
+	font-family: Fira Sans;
+	font-size: 24px;
+	font-weight: bold;
+	color: #74b843;
+	padding-top: 20px;
+}
+.cake-example-txt {
+	font-family: Open Sans Light;
+	font-size: 15px;
+	color: black;
+	padding-top: 20px;
+	line-height: 24px;
+}
+.contacts {
+    float: right;
+	clear: right;
+}
+.menu{
+	float:right;
+}
+.header {
+    max-width: 1218px;
+    margin: 28px auto 0;
+	position: relative;
+}
+.title-and-menu{
+	float:left;
+}
+.menu-list-left{
+	float:left;
+	clear:left;
+}
+.menu-list-right{
+	float:right;
+}
+.menu-list-left li {
+	padding-left: 42px;
+}
+.menu-list-right li {
+	padding-right: 40px;
+	float: right;
+}
+.menu-list-left li:first-child{
+	padding-left: 0px;
+}
+.menu-list-right li:first-child{
+	padding-right: 0px;
+}
+.about {
+	background-image: url(images/Shape2.jpg);
+	background-size: cover;
+}
+
+.about-block {
+	max-width: 1218px;
+	margin: 30px auto 0;
+    padding: 60px 0;
+}
+.about-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight: bold;
+	color: #74b843;
+	text-align: center;
+	margin-bottom: 34px;
+} 
+.description-left {
+	margin-right:54px;
+}
+.about-description {
+	font-family: Open Sans;
+	font-size:15px;
+	line-height: 24px;
+}
+.description-block {
+	width:50%;
+	float:left;
+}
+.map {
+	float: left;
+	width: 343px;
+}
+.footer-links {
+	float: left;
+	padding-left: 55px;
+}
+.footer-links li {
+	padding-bottom:10px;
+}
+.footer-links li a {
+	list-style:none;
+	text-decoration: none;
+	font-family: Fira Sans;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3980c9;
+	border-bottom: 1px solid #bed5ed;
+}
+.footer-links li a:hover {
+	color: #c81c85;
+	border-bottom: none;
+}
+.media-vk {
+  width: 296px;
+  height: 248px;
+  padding-left: 55px;
+  float: left;
+}
+/*.footer-phone {
+	float: left;
+}*/
+.phone-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #999999;
+	letter-spacing: 3px;
+}
+.phone-number {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight:bold;
+	padding-top: 10px;
+}
+.phone-and-mail {
+	float: left;
+}
+.footer-mail {
+	margin-top: 45px;
+}
+.footer-copy {
+    margin-top: 40px;
+}
+.mail-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #999999;
+	letter-spacing: 3px;
+}
+.copy-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #999999;
+}
+.mail-adress {
+	font-family: Open Sans;
+	font-size: 16px;
+	color: #3980c9;
+	padding-top: 10px;
+}
+.footer {
+	max-width: 1218px;
+	margin: 10px auto;
+	padding-top: 60px;
+}
+.contacts-and-menu{
+	float: right;
+}
+
+/* DELIVERY */
+
+.delivery-block {
+	width: 1218px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 44px;
+	
+}
+.delivery-banner-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 33px;
+}
+.title-and-text {
+	padding-left: 40px;
+	padding-bottom: 118px;
+}
+.delivery-banner-txt {
+	font-family: Open Sans;
+	font-size:15px;
+}
+.delivery-bag {
+	position: absolute;
+    top: -10px;
+    left: 398px;
+    width: 300px;
+}
+.delivery-middle {
+	max-width: 1218px;
+	margin: 30px auto 0;
+}
+.delivery-banner {
+	background-image: url(images/delivery-bg.jpg);
+	width: 711px;
+	float: left;
+	margin-top: 45px;
+	position: relative;
+	margin-left: 70px;
+}
+.delivery-side-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #74b843;
+	letter-spacing: 3px;
+	position: absolute;
+    bottom: 40px;
+    left: -70px;
+	
+}
+.delivery-payment {
+	width: 306px;
+	border: 10px solid #e6eaf8;
+	padding: 42px 40px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 100px;
+}
+.delivery-payment-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight: bold;
+}
+.delivery-payment-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.delivery-map {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+}
+.delivery-map-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight:bold;
+	position: absolute;
+    top: 30px;
+    left: 35px;
+}
+.delivery-map-adress {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #74b843;
+	position: absolute;
+    top: 55px;
+    left: 615px;
+	letter-spacing: 3px;
+	line-height: 25px;
+}
+.order-min {
+	background-image: url(images/min-bg.jpg);
+	padding: 45px 28px 45px 10px;
+    width: 359px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.order-min-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight: bold;
+}
+.order-min-list li  {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #c81c85;
+	line-height: 24px;
+}
+.li-color {
+	color: black;
+}
+.order-min-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+}
+.order-min-button a {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: white;
+	background: #db2594;
+	width: 235px;
+	text-align: center;
+	padding: 15px 26px;
+	border-radius: 26px;
+	margin: 30px 0;
+	text-decoration: none;
+	display: block;
+}
+
+.order-term-title {
+	font-family: Fira Sans;
+	font-size: 32px;
+	font-weight: bold;
+}
+.order-term-left {
+	float: left;
+	position: relative;
+}
+.order-term-right {
+	float: left;
+	padding-left: 52px;
+}
+.order-term-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	line-height: 24px;
+	padding-bottom: 25px;
+}
+.attention {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #c81c85;
+	letter-spacing: 3px;
+	position: absolute;
+    left: -70px;
+}
+.attention-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	padding-top: 25px;
+}
+.order-wedding-title, .order-degustation-title {
+	font-family: Open Sans;
+	font-size: 15px;
+	color: #74b843;
+	letter-spacing: 3px;
+}
+.order-wedding-txt, .order-degustation-txt {
+	font-family: Open Sans;
+	font-size: 15px;
+	line-height: 24px;
+}
+.order-wedding-txt {
+	padding-bottom: 25px;
+}
+.order-degustation-txt {
+	padding-top: 25px;
+}
+.order-term {
+	width: fit-content;
+	border: 10px solid #e6eaf8;
+	padding: 35px 30px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.order-term-right, .order-term-left {
+	padding-top: 30px;
+}
+
+ul.order-min-list {
+    list-style-type: disc;
+}
+.order-min-title, .order-min-list, .order-min-txt, .order-min-button {
+	padding-left: 40px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1218px){
+	.header {
+		padding: 0px 20px 10px 20px;
+	}
+	.title-header {
+		margin-left: 0;
+	}
+	.title-description {
+		float: left;
+	}
+	.logo-img {
+		width: 200px;
+		top: -50px;
+		margin-left: 200px;
+	}
+	.call {
+		font-size: 12px;
+		border-radius: 15px;
+		padding: 5px;
+		margin-left: 15px;
+		max-width: 150px;
+	}
+	.cake-examples-column:last-child{
+		display: none;
+	}
+	.cake-examples-column {
+		width: 30.7%;
+		margin: 0 1%;
+		float: left;
+	}
+	.cake-examples-column:first-child {
+		margin-left: 2%;
+	}
+	.phone-and-mail-footer {
+		margin-right: 10px;
+	}
+	.about-block {
+		padding: 60px 20px;
+	}
+}
+
+@media screen and (max-width:1024px){
+	.logo-img {
+		margin-left: 90px;
+	}
+	.map {
+		float: none;
+		width: 343px;
+		margin: 0 auto 30px;
+		clear: right;
+	}
+	.media-vk {
+		margin-left: 70px;
+	}
+	.phone-and-mail-footer {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width:768px){
+	.menu-list-left, .menu-list-right{
+		display: none !important;
+	}
+	.mobile-menu{
+		display: block !important;
+		float:left;
+	}
+	.mobile-menu img{
+		width: 30px;
+		margin-top: 15px;
+	}
+	.title-header {
+		float: right;
+		margin-bottom: 20px;
+		margin-right: 140px;
+	}
+	.contacts {
+		float: right;
+		clear: both;
+		margin-right: 10px;
+	}
+	.logo-img {
+		margin-left: -10px;
+		top: -40px;
+	}
+	.call {
+		font-size: 14px;
+		border-radius: 20px;
+		padding: 13px 20px;
+		margin-left: 39px;
+		width: auto !important;
+		max-width: none !important;
+	}
+	.cake-examples-column:nth-child(3) {
+		display: none;
+	}
+	.cake-examples-column {
+		width: 47%;
+	}
+	.media-vk {
+		margin-left: 0px;
+		padding-left: 35px;
+		width: 270px;
+		height: auto;
+	}
+	.phone-and-mail-footer {
+		margin-right: 15px;
+	}
+	.footer-links {
+		padding-left: 15px;
+	}
+	.footer-mail, .footer-copy{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width:480px){
+	.call {
+		display: none;
+	}
+	.title-header {
+		margin-right: 0;
+		max-width: 50%;
+	}
+	.description-block {
+		width: 100%;
+		float: none;
+		margin-top: 10px;
+	}
+	.media-vk {
+		display: none;
+	}
+	.phone-and-mail-footer, .footer-links {
+		width: 46%;
+		margin: 0 1%;
+	}
+}
+@media screen and (max-width:320px){
+	.title-header {
+		margin-right: 0;
+		max-width: none;
+		margin-top: 74px;
+		text-align: center;
+	}
+	.mobile-menu span {
+		display: none;
+	}
+	.title-description {
+		float: none;
+	}
+	.phone-and-mail-footer, .footer-links {
+		width: 98%;
+		margin: 0 1%;
+	}
+	.logo-img {
+		margin-left: 15%;
+	}
+	.cake-examples-column {
+		width: 92%;
+		margin: 0 4% !important;
+	}
+	.about {
+		background-size: contain;
+	}
+	.map {
+		width: 100% !important;
+		margin-bottom: 0;
+	}
+	.phone-and-mail-footer {
+		float: left;
+		margin-left: 15px;
+	}
+	.footer {
+		padding-top: 20px;
+	}
+}
+
+/* RESPONSIVE FOR DELIVERY */
+
+@media screen and (max-width:1218px){
+	.delivery-banner {
+		width: 63%;
+		margin: 0 1% !important;
+	}
+	.delivery-payment {
+		width: 28%;
+		margin: 0 1% !important;
+		border: 10px solid #e6eaf8;
+		padding: 15px;
+	}
+	.delivery-map {
+		margin-top: 30px;
+		width: 58%;
+		margin: 60px 1% 0;
+	}
+	.order-min {
+		padding: 15px;
+		width: 35%;
+		margin: 60px 1% 0;
+	}
+	.delivery-side-txt {
+		left: 40px;
+	}
+	.delivery-bag {
+		top: 57px;
+		left: 346px;
+		width: 220px;
+	}
+	img.delivery-map-img {
+		width: 100%;
+	}
+	.delivery-map-adress {
+		left: auto !important;
+		right: -12px;
+	}
+}
+
+@media screen and (max-width:1024px){
+	.delivery-banner {
+		width: 83%;
+		margin: 0 2% 20px !important;
+	}
+	.delivery-payment{
+		width: 83%;
+		margin: 0 2% 20px !important;
+		float: right;
+	}
+	.delivery-map {
+		width: 83%;
+		margin: 0 2% 20px !important;
+	}
+	.order-min{
+		width: 83%;
+		margin: 0 2% 20px !important;
+		float: right;
+	}
+}
+
+@media screen and (max-width:768px){
+	.order-term {
+		margin: 0 2%;
+	}
+	.order-term-right, .order-term-left {
+		width: 46%;
+		margin-left: 2%;
+	}
+	.attention {
+		left: 0px;
+	}
+	.order-term-right {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width:480px){
+	.delivery-bag{
+		display: none;
+	}
+	
+	.delivery-banner, .delivery-payment, .order-min, .order-term{
+		width: 90% !important;
+		margin: 10px auto !important;
+		float: none !important;
+		clear: both;
+		border: 0 !important;
+	}
+	.delivery-map {
+		width: 100%;
+		margin: 10px 0 !important;
+	}
+	.delivery-map-adress {
+		right: 15px;
+		top: 30px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.delivery-map-adress {
+		left: 36px !important;
+		right: auto !important;
+		font-size: 12px;
+		top: 56px;
+	}
+	.order-term {
+		padding: 0;
+	}
+	.order-term-right, .order-term-left {
+		width: 96%;
+		margin-left: 2%;
+	}
+}
