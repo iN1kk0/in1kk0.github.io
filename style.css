@@ -633,6 +633,14 @@ ul.order-min-list {
 	.footer-mail, .footer-copy{
 		margin-top: 30px;
 	}
+	.about {
+		background-size: contain;
+	}
+}
+@media screen and (max-width: 668px){
+	.media-vk {
+		display: none;
+	}
 }
 @media screen and (max-width:480px){
 	.call {
@@ -651,8 +659,16 @@ ul.order-min-list {
 		display: none;
 	}
 	.phone-and-mail-footer, .footer-links {
-		width: 46%;
+		width: 45%;
 		margin: 0 1%;
+	}
+	.logo-img {
+		width: 171px;
+		top: -18px;
+	}
+	.mobile-menu span {
+		font-size: 26px;
+		top: -4px;
 	}
 }
 @media screen and (max-width:320px){
