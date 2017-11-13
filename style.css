@@ -806,6 +806,7 @@ ul.order-min-list {
 		float: none !important;
 		clear: both;
 		border: 0 !important;
+		padding: 0;
 	}
 	.delivery-map {
 		width: 100%;
@@ -814,6 +815,21 @@ ul.order-min-list {
 	.delivery-map-adress {
 		right: 15px;
 		top: 30px;
+	}
+	.delivery-map-title {
+		font-size: 26px;
+	}
+	.order-term-right, .order-term-left {
+		width: 98%;
+		margin-left: 2%;
+	}
+	.order-min-button a {
+		font-size: 15px;
+		width: 200px;
+		padding: 10px;
+		margin: 20px 10px 10px 0px;
+		position: relative;
+		bottom: 10px;
 	}
 }
 
