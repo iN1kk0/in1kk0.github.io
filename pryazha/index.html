@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Теплая Мисс</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!--link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel='stylesheet' href='normalize.css'/>
+    <link rel='stylesheet' href='woocommerce.css'/>
+    <link rel='stylesheet' href='style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+            $('.bxslider_brands').bxSlider({
+                controls: false
+            });
+
+            $(".menu-button-mobile").on("click", function () {
+                $(".first-menu-mobile").slideToggle();
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="header-top">
+            <ul class="first-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu" style="display:none;">
+                <img src="img/menu.png" class="menu-button-mobile">
+                <ul class="first-menu-mobile" style="display:none;">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="icons-head">
+                <a href="#"><span class="icon-head icon-head-1"></span></a>
+                <a href="#"><span class="icon-head icon-head-2"></span></a>
+                <a href="#"><span class="icon-head icon-head-3"></span></a>
+                <a href="#"><span class="icon-head icon-head-4"></span></a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-mid">
+            <img class="head-logo" src="img/logo.png"/>
+            <div class="search-head-block">
+                <input class="search-field" type="text" placeholder="Начните печатать, что вы ищите...">
+                <img class="search-icon" src="img/magnifying-glass-browser.png">
+                <p class="search-desc">Например: <span style="color:#edd8cc;">пряжа для шапок</span></p>
+            </div>
+            <div class="time-call-head-block">
+                <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                <a class="click-call-form" href="#">Заказать звонок</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-bot">
+            <ul class="second-menu">
+                <li><a href="#">Пряжа</a></li>
+                <li><a href="#">Спицы и крючки</a></li>
+                <li><a href="#">Наборы</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Видеоуроки и схемы</a></li>
+                <li><a href="#">Журналы</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <div class="slider-home">
+                    <div class="bxslider">
+                        <div class="slide" style="background: url('img/slider-image.jpg');">
+                            <span class="slider-text">Воплощай идеи в <b>жизнь</b> –<br>  <b>твори</b>, и <b>будь счастлива!</b></span>
+                        </div>
+                        <div class="slide" style="background: url('img/slider-image.jpg');">
+                            <span class="slider-text">Воплощай идеи в <b>жизнь</b> –<br>  <b>твори</b>, и <b>будь счастлива!</b></span>
+                        </div>
+                        <div class="slide" style="background: url('img/slider-image.jpg');">
+                            <span class="slider-text">Воплощай идеи в <b>жизнь</b> –<br>  <b>твори</b>, и <b>будь счастлива!</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-items">
+                    <div class="top-cat-vid-block">
+                        <div class="top-cat-menu-block">
+                            <ul class="side-cat-menu">
+                                <li><a href="#">Пряжа</a></li>
+                                <li><a href="#">Спицы и крючки</a></li>
+                                <li><a href="#">Наборы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Видеоуроки и схемы</a></li>
+                                <li><a href="#">Журналы</a></li>
+                            </ul>
+                        </div>
+                        <div class="cat-block-4-mini">
+                            <a href="#"><img src="img/pr-img.jpg"></a>
+                            <a href="#"><img src="img/pr-img.jpg"></a><br>
+                            <a href="#"><img src="img/pr-img.jpg"></a>
+                            <a href="#"><img src="img/pr-img.jpg"></a>
+                        </div>
+                        <div class="home-block-vid">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="best-sale-items">
+                    <div class="item itembanner">
+                        <!--img src="img/skidki-banner.png"-->
+                        <a class="button-more">Показать все</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                        <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                        <span class="item-subcat">Лучшие акции</span><br>
+                        <div class="item-prod-info">
+                            Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                        </div>
+                        <span class="item-price">от 590 руб.</span>
+                        <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                            <span>В корзину</span></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item itembanner">
+                        <!--img src="img/skidki-banner.png"-->
+                        <a class="button-more">Показать все</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="popular-prods-section">
+                    <div class="pop-prods-block">
+                        <h2>Популярные покупки</h2>
+                        <div class="pop-prods-items">
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <div class="newsl-left">
+                        <span class="newsl-text1">Хотите быть в курсе последних<br>новостей и акций?</span><br>
+                        <span class="newsl-text2">Подписаться на<br>рассылку</span>
+                    </div>
+                    <form>
+                        <input type="text" class="textfield" placeholder="Введите ваш e-mail">
+                        <input type="sumbit" class="submitform" value="Подписаться">
+                    </form>
+                    <!--img class="newsl-right" src="img/newsl-img.png"-->
+                    <div class="clearfix"></div>
+                </div>
+                <div class="brands-section">
+                    <div class="bxslider_brands">
+                        <div class="slide" style="background: url('img/brand-bg.png');">
+                            <h2>Наши бренды</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo<br>
+                                viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                        <div class="slide" style="background: url('img/brand-bg.png');">
+                            <h2>Наши бренды</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo<br>
+                                viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                        <div class="slide" style="background: url('img/brand-bg.png');">
+                            <h2>Наши бренды</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo<br>
+                                viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-section">
+                    <h2>Последние новости</h2>
+                    <div class="item-news">
+                        <a href="#"><img src="img/item-news-img.png"></a>
+                        <a href="#"><span
+                                class="item-news-title">Книги и журналы для руколедия теперь тут</span></a><br>
+                        <span class="item-news-date">25 марта 2020 года</span>
+                        <span class="item-news-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-news">
+                        <a href="#"><img src="img/item-news-img.png"></a>
+                        <a href="#"><span
+                                class="item-news-title">Книги и журналы для руколедия теперь тут</span></a><br>
+                        <span class="item-news-date">25 марта 2020 года</span>
+                        <span class="item-news-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-news">
+                        <a href="#"><img src="img/item-news-img.png"></a>
+                        <a href="#"><span
+                                class="item-news-title">Книги и журналы для руколедия теперь тут</span></a><br>
+                        <span class="item-news-date">25 марта 2020 года</span>
+                        <span class="item-news-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-news">
+                        <a href="#"><img src="img/item-news-img.png"></a>
+                        <a href="#"><span
+                                class="item-news-title">Книги и журналы для руколедия теперь тут</span></a><br>
+                        <span class="item-news-date">25 марта 2020 года</span>
+                        <span class="item-news-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="adv-section">
+                    <h2>Наши преимущества</h2>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/box.png"></div>
+                        <span class="item-adv-title">Удобная доставка</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/call-center.png"></div>
+                        <span class="item-adv-title">Помощь при покупке</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/yarn.png"></div>
+                        <span class="item-adv-title">Широкий ассортимент</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/card.png"></div>
+                        <span class="item-adv-title">Система накопительных скидок</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/warehouse.png"></div>
+                        <span class="item-adv-title">Работаем от поставщика</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="item-adv">
+                        <div class="img-section"><img src="img/wool.png"></div>
+                        <span class="item-adv-title">Покупка от одного мотка</span>
+                        <span class="item-adv-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="inst-section">
+                    <div class="inst-block">
+                        <h2>Мы в инстаграм</h2>
+                        <div class="item-inst">
+                            <a href="#"><img src="img/item-news-img.png"></a>
+                            <span class="item-inst-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                        </div>
+                        <div class="item-inst">
+                            <a href="#"><img src="img/item-news-img.png"></a>
+                            <span class="item-inst-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                        </div>
+                        <div class="item-inst">
+                            <a href="#"><img src="img/item-news-img.png"></a>
+                            <span class="item-inst-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                        </div>
+                        <div class="item-inst">
+                            <a href="#"><img src="img/item-news-img.png"></a>
+                            <span class="item-inst-text">В Атмосфере свой неповторимый стиль, который прослеживается как в интерьерах студии, в оформлении интернет-магазина, в полиграфии, так и в сортах пряжи и видах инструментов, которые мы продаем.</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-block">
+                <img src="img/logo.png" class="logo-footer">
+                <div class="footer-top-block-1">
+                    <span class="footer-block-title">Сервис и поддержка</span>
+                    <ul class="f-block1-menu1">
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                    <ul class="f-block1-menu2">
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-top-block-2">
+                    <span class="footer-block-title">О компании</span>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Мастер-классы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-block-3">
+                    <span class="footer-block-title">Мы в социальных сетях</span>
+                    <a href=""><img src="img/instagram.png"> <span class="inst-text">Мы в инстаграм</span></a><br>
+                    <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                    <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                    <a class="click-call-form" href="#">Заказать звонок</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            2019 © — Интернет-магазин пряжи "Теплая Мисс"
+        </div>
+    </footer>
+</div>
+</body>
+</html>
