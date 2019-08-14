@@ -1073,3 +1073,38 @@ select {
 .cat-pagination a:hover {
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .cat-left-side {
+        display: none;
+    }
+
+    .cat-right-side {
+        width: 96%;
+        margin: 10px 2%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .cat-filters h2 {
+        width: 100%;
+        display: block;
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+
+    .cat-filter-show {
+        float: none;
+        margin: 10px;
+    }
+
+    select {
+        margin: 5px;
+    }
+
+    .cat-items .item {
+        width: 92%;
+        margin: 10px 4%;
+    }
+}
