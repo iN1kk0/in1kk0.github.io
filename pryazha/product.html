@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Теплая Мисс</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!--link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel='stylesheet' href='normalize.css'/>
+    <link rel='stylesheet' href='woocommerce.css'/>
+    <link rel='stylesheet' href='style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+            $('.bxslider_brands').bxSlider({
+                controls: false
+            });
+
+            $(".menu-button-mobile").on("click", function () {
+                $(".first-menu-mobile").slideToggle();
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="header-top">
+            <ul class="first-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu" style="display:none;">
+                <img src="img/menu.png" class="menu-button-mobile">
+                <ul class="first-menu-mobile" style="display:none;">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="icons-head">
+                <a href="#"><span class="icon-head icon-head-1"></span></a>
+                <a href="#"><span class="icon-head icon-head-2"></span></a>
+                <a href="#"><span class="icon-head icon-head-3"></span></a>
+                <a href="#"><span class="icon-head icon-head-4"></span></a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-mid">
+            <img class="head-logo" src="img/logo.png"/>
+            <div class="search-head-block">
+                <input class="search-field" type="text" placeholder="Начните печатать, что вы ищите...">
+                <img class="search-icon" src="img/magnifying-glass-browser.png">
+                <p class="search-desc">Например: <span style="color:#edd8cc;">пряжа для шапок</span></p>
+            </div>
+            <div class="time-call-head-block">
+                <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                <a class="click-call-form" href="#">Заказать звонок</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-bot">
+            <ul class="second-menu">
+                <li><a href="#">Пряжа</a></li>
+                <li><a href="#">Спицы и крючки</a></li>
+                <li><a href="#">Наборы</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Видеоуроки и схемы</a></li>
+                <li><a href="#">Журналы</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <div class="cat-section">
+                    <div class="cat-left-side">
+                        <div class="top-cat-menu-block">
+                            <ul class="side-cat-menu">
+                                <li><a href="#">Пряжа</a></li>
+                                <li><a href="#">Спицы и крючки</a></li>
+                                <li><a href="#">Наборы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Видеоуроки и схемы</a></li>
+                                <li><a href="#">Журналы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cat-right-side">
+                        <div class="product-image">
+                            <img src="img/prod-img.png" class="product-big-image">
+                            <img src="img/prod-img.png" class="product-little-image">
+                            <img src="img/prod-img.png" class="product-little-image">
+                            <img src="img/prod-img.png" class="product-little-image">
+                            <img src="img/prod-img.png" class="product-little-image last-im">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="product-info">
+                            <h2>Название статьи</h2>
+                            <span class="artic">Артикул: 12345-*321</span>
+                            <div class="price-block">
+                                <span class="prod-price">от 590 руб.</span>
+                                <a href="#" class="prod-q-minus">-</a>
+                                <input type="text" value="12" class="prod-q-inp">
+                                <a href="#" class="prod-q-plus">+</a>
+                                <a href="#" class="add-to-cart"><span>В корзину</span><img
+                                        src="img/shopping-cart-icon.png"></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="color-picker">
+                                <span class="cp-t">выбор цвета</span>
+                                <div class="clearfix"></div>
+                                <span class="colors" style="background-color: #0f834d;"></span>
+                                <span class="colors" style="background-color: deeppink;"></span>
+                                <span class="colors" style="background-color: #e2b8a2;"></span>
+                                <span class="colors" style="background-color: deepskyblue;"></span>
+                                <span class="colors" style="background-color: chartreuse;"></span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="prod-params">
+                                <span style="float:left;" class="param-name">Модель:</span>
+                                <span style="float:left;" class="param-val">Lana Grossa</span>
+                                <div class="clearfix"></div>
+                                <span style="float:left;" class="param-name">Коллекция</span>
+                                <span style="float:left;" class="param-val">Весна/лето 2019</span>
+                                <div class="clearfix"></div>
+                                <span style="float:left;" class="param-name">Описание</span>
+                                <span style="float:left;" class="param-val">Лучшая цена!</span>
+                                <div class="clearfix"></div>
+                                <span style="float:left;" class="param-name">Модель:</span>
+                                <span style="float:left;" class="param-val">Lana Grossa</span>
+                                <div class="clearfix"></div>
+                                <span style="float:left;" class="param-name">Коллекция</span>
+                                <span style="float:left;" class="param-val">Весна/лето 2019</span>
+                                <div class="clearfix"></div>
+                                <span style="float:left;" class="param-name">Описание</span>
+                                <span style="float:left;" class="param-val">Лучшая цена!</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="prod-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="soc-share">
+                        </div>
+                        <div class="prod-tabs">
+                        </div>
+                        <div class="similar-prods1 similar-prods">
+                            <h3>С этим товаром покупают</h3>
+                            <a href="#" class="show-all">Показать все</a>
+                            <div class="clearfix"></div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="similar-prods2 similar-prods">
+                            <h3>Похожие товары</h3>
+                            <a href="#" class="show-all">Показать все</a>
+                            <div class="clearfix"></div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="similar-prods3 similar-prods">
+                            <h3>Ранее вы смотрели</h3>
+                            <a href="#" class="show-all">Показать все</a>
+                            <div class="clearfix"></div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img class="item-image" src="img/prod-image.png"></a>
+                                <a href="#"><span class="item-cat">Книги и журналы</span><br></a>
+                                <span class="item-subcat">Лучшие акции</span><br>
+                                <div class="item-prod-info">
+                                    Lana Grossa Cashsilk<br>Весна/лето<br>Лучшая цена!
+                                </div>
+                                <span class="item-price">от 590 руб.</span>
+                                <a href="#" class="add-to-cart-item"><img src="img/shopping-cart-icon.png">
+                                    <span>В корзину</span></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-block">
+                <img src="img/logo-bottom.png" class="logo-footer">
+                <div class="footer-top-block-1">
+                    <span class="footer-block-title">Сервис и поддержка</span>
+                    <ul class="f-block1-menu1">
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                    <ul class="f-block1-menu2">
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-top-block-2">
+                    <span class="footer-block-title">О компании</span>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Мастер-классы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-block-3">
+                    <span class="footer-block-title">Мы в социальных сетях</span>
+                    <a href=""><img src="img/instagram.png"> <span class="inst-text">Мы в инстаграм</span></a><br>
+                    <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                    <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                    <a class="click-call-form" href="#">Заказать звонок</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            2019 © — Интернет-магазин пряжи "Теплая Мисс"
+        </div>
+    </footer>
+</div>
+</body>
+</html>
