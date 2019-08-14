@@ -987,18 +987,89 @@ span.slider-text {
         width: auto;
         margin: 10px auto 0;
     }
+
     .item-news, .item-inst {
         width: 92%;
         margin: 4%;
     }
+
     .item-adv {
         width: 92%;
         margin: 4%;
     }
+
     .footer-top-block-1, .footer-top-block-2, .footer-top-block-3 {
         float: left;
         width: auto !important;
         margin: auto;
         padding: 10px;
     }
+}
+
+/*catalog*/
+.cat-section {
+    max-width: 1170px;
+    margin: 0px auto 30px;
+    border-top: 2px solid #cfcfcf;
+    padding-top: 30px;
+}
+
+.cat-left-side {
+    height: 100%;
+    float: left;
+    width: 25%;
+}
+
+.cat-right-side {
+    float: left;
+    width: 75%;
+}
+
+.cat-items {
+    margin-left: -1%;
+    margin-right: -2%;
+}
+
+.cat-items .item {
+    width: 31%;
+    height: 455px;
+}
+
+.cat-filters h2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 0;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.cat-filter-show {
+    float: right;
+    clear: right;
+    position: relative;
+    top: 10px;
+}
+
+.cat-filter-sort {
+    width: 100%;
+    float: left;
+    clear: both;
+    background: #f9f9f9;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px 8px;
+    margin: 0 5px;
+}
+
+.cat-pagination {
+    background: #e2b8a2;
+    padding: 8px 20px 6px;
+    margin: 20px 2% 0px 1%;
+}
+
+.cat-pagination a:hover {
+    color: white;
 }
