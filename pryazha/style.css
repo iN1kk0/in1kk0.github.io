@@ -1331,3 +1331,182 @@ select {
         margin: 10px 4%;
     }
 }
+
+/*content, article*/
+
+.content-page h2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.contact-map {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.ac-block {
+    width: 22%;
+    float: left;
+    margin-right: 3%;
+}
+
+.ac-block img {
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    margin: 30px;
+    padding: 30px 15px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+input.name {
+    width: 46%;
+    float: left;
+    height: 40px;
+}
+
+input.email {
+    height: 40px;
+    width: 46%;
+    float: right;
+}
+
+textarea.message {
+    width: 100%;
+    height: 110px;
+    margin: 20px 0;
+}
+
+input.submit {
+    width: 250px;
+    float: right;
+    background: #deb59f;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+}
+
+form.contact-f a {
+    color: #deb59f;
+}
+
+.check-cont {
+    width: 63%;
+    float: left;
+}
+
+@media screen and (max-width: 414px) {
+    .ac-block {
+        width: 96% !important;
+        margin: 10px 2% !important;
+    }
+
+    .contact-form {
+        margin: 5px;
+    }
+
+    .check-cont {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    img.alighnleft {
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+
+    .list-art {
+        display: none;
+    }
+}
+
+.content-page .dates {
+    margin: 12px 0;
+}
+
+img.article-main-img {
+    width: 100%;
+}
+
+img.alighnleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+span.subtitle {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+blockquote {
+    padding: 30px 20px;
+    width: 100%;
+    background: #f9f9f9;
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+ol.list-left, ul.list-right {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-left: 20px;
+}
+
+ol.list-left li, ul.list-right li {
+    color: #deb59f;
+    font-weight: bold;
+}
+
+ol.list-left span, ul.list-right span {
+    color: #5d5d5d;
+    font-weight: normal;
+}
+
+span.similar-art-title {
+    display: block;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+.list-art {
+    height: 40px;
+    margin: 10px 0;
+    background: #e2b8a2;
+    padding: 9px 10px 0;
+}
+
+.list-art a:hover {
+    color: white;
+}
+
+a.left-art {
+    display: block;
+    float: left;
+}
+
+a.all-art {
+    float: left;
+    margin-left: 28%;
+}
+
+a.right-art {
+    display: block;
+    float: right;
+}

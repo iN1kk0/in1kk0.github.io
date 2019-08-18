@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Теплая Мисс</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!--link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel='stylesheet' href='normalize.css'/>
+    <link rel='stylesheet' href='woocommerce.css'/>
+    <link rel='stylesheet' href='style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+            $('.bxslider_brands').bxSlider({
+                controls: false
+            });
+
+            $(".menu-button-mobile").on("click", function () {
+                $(".first-menu-mobile").slideToggle();
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="header-top">
+            <ul class="first-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu" style="display:none;">
+                <img src="img/menu.png" class="menu-button-mobile">
+                <ul class="first-menu-mobile" style="display:none;">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="icons-head">
+                <a href="#"><span class="icon-head icon-head-1"></span></a>
+                <a href="#"><span class="icon-head icon-head-2"></span></a>
+                <a href="#"><span class="icon-head icon-head-3"></span></a>
+                <a href="#"><span class="icon-head icon-head-4"></span></a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-mid">
+            <img class="head-logo" src="img/logo.png"/>
+            <div class="search-head-block">
+                <input class="search-field" type="text" placeholder="Начните печатать, что вы ищите...">
+                <img class="search-icon" src="img/magnifying-glass-browser.png">
+                <p class="search-desc">Например: <span style="color:#edd8cc;">пряжа для шапок</span></p>
+            </div>
+            <div class="time-call-head-block">
+                <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                <a class="click-call-form" href="#">Заказать звонок</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-bot">
+            <ul class="second-menu">
+                <li><a href="#">Пряжа</a></li>
+                <li><a href="#">Спицы и крючки</a></li>
+                <li><a href="#">Наборы</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Видеоуроки и схемы</a></li>
+                <li><a href="#">Журналы</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <div class="cat-section">
+                    <div class="cat-left-side">
+                        <div class="top-cat-menu-block">
+                            <ul class="side-cat-menu">
+                                <li><a href="#">Пряжа</a></li>
+                                <li><a href="#">Спицы и крючки</a></li>
+                                <li><a href="#">Наборы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Видеоуроки и схемы</a></li>
+                                <li><a href="#">Журналы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cat-right-side">
+                        <div class="content-page">
+                            <h2>Наши контакты</h2>
+                            <div class="contact-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.698806427171!2d37.50376391605036!3d55.88523908923715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5383325470adb%3A0x1b91155fb43ad525!2z0JjQttC-0YDRgdC60LDRjyDRg9C7LiwgOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTU5OQ!5e0!3m2!1sru!2sua!4v1566142175335!5m2!1sru!2sua"
+                                        width="100%" height="300" frameborder="0" style="border:0"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <h3>Как нас найти</h3>
+                            <div class="all-contacts">
+                                <div class="ac-block">
+                                    <img src="img/adr-mark.png">
+                                    <span>125599, Россия, Москва, Ижорская улица, дом 8, строение 10.</span>
+                                </div>
+                                <div class="ac-block">
+                                    <img src="img/phone-call.png">
+                                    <span>+7 (905) 552-15-80</span>
+                                </div>
+                                <div class="ac-block">
+                                    <img src="img/envelope.png">
+                                    <span>bibipauto@mail.ru</span>
+                                </div>
+                                <div class="ac-block">
+                                    <img src="img/clock.png">
+                                    <span>с 9-00 до 21-00  (без выходных)        </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="contact-form">
+                                <h3>Или напишите нам</h3>
+                                <form class="contact-f">
+                                    <input class="name" type="text" placeholder="Ваше имя"> <input class="email"
+                                                                                                   type="text"
+                                                                                                   placeholder="Ваша почта">
+                                    <div class="clearfix"></div>
+                                    <textarea class="message" placeholder="Текст вашего сообщения"></textarea>
+                                    <div class="check-cont"><input type="checkbox" class="soglashenie"> Согласен с <a
+                                            href="#">правилами сервиса</a> и принимаю <a href="#">пользовательское
+                                        соглашение</a></div>
+                                    <input type="submit" value="Отправить сообщение" class="submit">
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer id="colophon" class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-block">
+                <img src="img/logo-bottom.png" class="logo-footer">
+                <div class="footer-top-block-1">
+                    <span class="footer-block-title">Сервис и поддержка</span>
+                    <ul class="f-block1-menu1">
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                    <ul class="f-block1-menu2">
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-top-block-2">
+                    <span class="footer-block-title">О компании</span>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Мастер-классы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-block-3">
+                    <span class="footer-block-title">Мы в социальных сетях</span>
+                    <a href=""><img src="img/instagram.png"> <span class="inst-text">Мы в инстаграм</span></a><br>
+                    <span class="work-time">Работаем с 9:00 до 18:00</span><br>
+                    <span class="work-phone">8 903 <b>890 33 00</b></span><br>
+                    <a class="click-call-form" href="#">Заказать звонок</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            2019 © — Интернет-магазин пряжи "Теплая Мисс"
+        </div>
+    </footer>
+</div>
+</body>
+</html>
