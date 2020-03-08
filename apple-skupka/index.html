@@ -41,7 +41,7 @@
             </div><!--/.nav-collapse -->
             <div class="nav navbar-nav navbar-right top-right">
                 <span>+7(495) 123-45-67</span><br>
-                <a href="#">Заказать звонок</a>
+                <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
             </div>
         </div><!--/.container-fluid -->
     </nav>
@@ -171,7 +171,8 @@
                 <!-- Заголовок 2 панели -->
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Как продать свой
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">Как
+                            продать свой
                             iPad?</a>
                     </h4>
                 </div>
@@ -187,7 +188,8 @@
                 <!-- Заголовок 3 панели -->
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Вы выкупаете
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseThree">Вы
+                            выкупаете
                             MacBook?</a>
                     </h4>
                 </div>
@@ -302,7 +304,7 @@
         </div>
         <div class="col-md-3 footer-col">
             <span style="font-size: 18px;font-weight: bold;">+7(495) 123-45-67</span><br>
-            <a href="#">Заказать звонок</a>
+            <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
         </div>
     </div>
     <div class="row footer-bottom" style="font-size: 12px;color: #B8B8B8;">
@@ -317,5 +319,42 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+<div class="modal my_modal fade" tabindex="-1" role="dialog" id="zakazat_zvonok">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Форма заказа</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input name="name" type="text" class="name form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input name="phone" type="text" class="phone form-control" required
+                               placeholder="Номер телефона*">
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="text" class="email form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input name="submit" type="submit" class="submit center-block zayavka-submit"
+                               placeholder="Отправить заявку">
+                    </div>
+                    <div class="form-group">
+                        <div style="font-size: 12px;">* Обязательные для заполнения поля. ** Заявка не является
+                            обязательством продажи вашего устройства. Полученные контактные данные не будут переданы
+                            третьим
+                            лицам.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
