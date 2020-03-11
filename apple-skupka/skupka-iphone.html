@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Мета-теги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Скупка Apple</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Дополнение к теме -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid" style="padding: 0;">
+    <nav class="navbar navbar-default myvanbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img class="media-object pull-left logo-h" src="img/logo.svg" alt="Logo"></a>
+                <a class="navbar-brand pull-left " href="#"><b>Apple</b><br>Cкупка</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-nav navbar-center">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Продать</a></li>
+                    <li><a href="#">Купить/Обменять</a></li>
+                    <li><a href="#">Условия</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+            <div class="nav navbar-nav navbar-right top-right">
+                <span>+7(495) 123-45-67</span><br>
+                <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
+            </div>
+        </div><!--/.container-fluid -->
+    </nav>
+</div>
+
+<div class="container-fluid banner-section">
+    <div class="center-block col-md-8" style="float: none;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Продать iPhone</li>
+            </ol>
+        </nav>
+        <h1 class="text-center bnr-txt-1 bnr-txt-1-pages">Скупка iPhone</h1>
+        <div class="text-center bnr-txt-2">Купим ваш iPhone по оптимальной цене в Москве и Московской области!<br>
+            Производим выкуп оперативно и честно! Деньги сразу!
+        </div>
+    </div>
+</div>
+
+<div class="container container-calc" style="padding: 20px 140px;">
+    <div class="row">
+        <h2 class="text-center h2-content">Заполните форму для выкупа Apple iPhone</h2>
+    </div>
+    <div class="row" style="margin: 30px 0 0;">
+        <div class="col-md-8 col-md-offset-2">
+            <form class="zayavka-main">
+                <div class="form-group">
+                    <select class="form-control" id="zayavka-type" name="zayavka-type" required="">
+                        <option>Тип устройства</option>
+                        <option>Тип устройства</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="zayavka-model" name="zayavka-model" required="">
+                        <option>Модель*</option>
+                        <option>Модель*</option>
+                    </select>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control mb-2" id="zayavka-imei" name="zayavka-imei"
+                               placeholder="IMEI / Серийный номер">
+                    </div>
+                    <div class="col-lg-2 linkwhere">
+                        <a href="#">Где найти?</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control mb-2" id="zayavka-name" name="zayavka-name"
+                           placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control mb-2" id="zayavka-phone" name="zayavka-phone"
+                           placeholder="Номер телефона*" required="">
+                </div>
+                <div class="form-group">
+                    <a href="#" class="add-photo">Прикрепить фото</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="zayavka-submit center-block btn btn-primary">Отправить заявку</button>
+                </div>
+                <div class="form-group">
+                    <div style="font-size: 12px;">* Обязательные для заполнения поля. <br>** Заявка не является
+                        обязательством продажи вашего устройства. Полученные контактные данные не будут переданы третьим
+                        лицам.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="text-center h2-content">Продать Apple iPhone</h2>
+    </div>
+    <div class="row">
+        <p>Выкуп iPhone - наша компания занимается выкупом техники Apple iPhone по очень выгодной цене. Кроме того у нас
+            вы можете купить новые или б/у гаджеты Эппл, а также обменять ваше старое устройство на новое с доплатой
+            (Trade-in Apple).</p>
+        <p>Скупка техники компании Apple производится на территории Москвы и Московской области. Деньги выплачиваются
+            сразу после осмотра и проверки вашего устройства. Выкупаем дорого!</p>
+    </div>
+</div>
+
+<div class="container-fluid footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-col">
+                <a class="pull-left" href="#"><img class="media-object pull-left logo-h" src="img/logo.svg" alt="Logo"></a>
+                <a class="navbar-brand pull-left" style="margin: 0 0 20px 0;padding: 6px;"
+                   href="#"><b>Apple</b><br>Cкупка</a>
+                <div class="clearfix"></div>
+                <div style="font-size: 12px;color: #B8B8B8;">Скупка iPhone, iPad, MacBook, iMac, Apple Watch в Москве и
+                    Московской области.
+                </div>
+            </div>
+            <div class="col-md-3 footer-col">
+                <ul class="footer-list">
+                    <li class=""><a href="">Продать</a></li>
+                    <li class=""><a href="">Купить</a></li>
+                    <li class="-"><a href="">Обменять</a></li>
+                    <li class=""><a href="">Условия</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <ul class="footer-list">
+                    <li class=""><a href="">О компании</a></li>
+                    <li class=""><a href="">Блог</a></li>
+                    <li class=""><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <span style="font-size: 18px;font-weight: bold;">+7(495) 123-45-67</span><br>
+                <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="row footer-bottom" style="font-size: 12px;color: #B8B8B8;">
+            © 2020 Все права защищены.
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<div class="modal my_modal fade" tabindex="-1" role="dialog" id="zakazat_zvonok">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Форма заказа</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input name="name" type="text" class="name form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input name="phone" type="text" class="phone form-control" required
+                               placeholder="Номер телефона*">
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="text" class="email form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input name="submit" type="submit" class="submit center-block zayavka-submit"
+                               placeholder="Отправить заявку">
+                    </div>
+                    <div class="form-group">
+                        <div style="font-size: 12px;">* Обязательные для заполнения поля. <br>** Заявка не является
+                            обязательством продажи вашего устройства. Полученные контактные данные не будут переданы
+                            третьим
+                            лицам.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
