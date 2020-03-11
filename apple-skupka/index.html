@@ -16,64 +16,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-fluid" style="padding: 0;">
-    <nav class="navbar navbar-default myvanbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#"><img class="media-object pull-left logo-h" src="img/logo.svg" alt="Logo"></a>
-                <a class="navbar-brand pull-left " href="#"><b>Apple</b><br>Cкупка</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-nav navbar-center">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Продать</a></li>
-                    <li><a href="#">Купить/Обменять</a></li>
-                    <li><a href="#">Условия</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-            <div class="nav navbar-nav navbar-right top-right">
-                <span>+7(495) 123-45-67</span><br>
-                <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
-            </div>
-        </div><!--/.container-fluid -->
-    </nav>
+<div class="container-fluid header-bg" style="padding: 0;">
+    <div class="container">
+        <nav class="navbar navbar-default myvanbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#"><img class="media-object pull-left logo-h" src="img/logo.svg" alt="Logo"></a>
+                    <a class="navbar-brand pull-left " href="#"><b>Apple</b><br>Cкупка</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-nav navbar-center">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Продать</a></li>
+                        <li><a href="#">Купить/Обменять</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+                <div class="nav navbar-nav navbar-right top-right">
+                    <span>+7(495) 123-45-67</span><br>
+                    <a data-toggle="modal" data-target="#zakazat_zvonok" href="#">Заказать звонок</a>
+                </div>
+            </div><!--/.container-fluid -->
+        </nav>
+    </div>
 </div>
 
 <div class="container-fluid banner-section">
-    <div class="center-block col-md-8" style="float: none;">
-        <h1 class="text-center bnr-txt-1">Скупка техники Apple <br>#1 в России!</h1>
-        <div class="text-center bnr-txt-2">У нас самые выгодные предложения по цене в Москве и Московской области! <br>Производим
-            выкуп оперативно и честно! Деньги сразу!
+    <div class="container">
+        <div class="center-block col-md-8" style="float: none;">
+            <h1 class="text-center bnr-txt-1">Скупка техники Apple <br>#1 в России!</h1>
+            <div class="text-center bnr-txt-2">У нас самые выгодные предложения по цене в Москве и Московской области!
+                <br>Производим
+                выкуп оперативно и честно! Деньги сразу!
+            </div>
+            <div class="text-center bnr-btn-1"><a href="#">Оставить заявку</a></div>
+            <div class="text-center bnr-btn-2"><a href="#">Ознакомиться с условиями</a></div>
         </div>
-        <div class="text-center bnr-btn-1"><a href="#">Оставить заявку</a></div>
-        <div class="text-center bnr-btn-2"><a href="#">Ознакомиться с условиями</a></div>
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6 bnr-2">
-            <div class="col-md-6 text-right col-md-offset-6">
-                <span class="bnr-shop-head">Магазин Apple</span>
-                <span class="bnr-shop-text">Здесь можно купить новые и б/у iPhone, iPad, MacBook, iMac, Apple Watch</span>
-                <a href="#" class="bnr-shop-link">Магазин</a>
+        <div class="row">
+            <div class="col-md-6 bnr-2">
+                <div class="col-md-6 text-right col-md-offset-6">
+                    <span class="bnr-shop-head">Магазин Apple</span>
+                    <span class="bnr-shop-text">Здесь можно купить новые и б/у iPhone, iPad, MacBook, iMac, Apple Watch</span>
+                    <a href="#" class="bnr-shop-link">Магазин</a>
+                </div>
+            </div>
+            <div class="col-md-6 bnr-3">
+                <div class="col-md-6 text-left">
+                    <span class="bnr-shop-head">Trade-in Apple</span>
+                    <span class="bnr-shop-text">У нас можно обменять ваше старое устройство Apple на новое!</span>
+                    <a href="#" class="bnr-shop-link">Обменять</a>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 bnr-3">
-            <div class="col-md-6 text-left">
-                <span class="bnr-shop-head">Trade-in Apple</span>
-                <span class="bnr-shop-text">У нас можно обменять ваше старое устройство Apple на новое!</span>
-                <a href="#" class="bnr-shop-link">Обменять</a>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="container container-calc" style="padding: 40px 140px;">
@@ -260,18 +265,20 @@
 </div>
 
 <div class="container-fluid container-arts">
-    <div class="row">
-        <div class="col-md-4 articles-bottom">
-            <img class="media-object" src="img/art-bot-1.png" alt="">
-            <div class="articles-bottom-text">Smart Battery Case Replacement Program</div>
-        </div>
-        <div class="col-md-4 articles-bottom">
-            <img class="media-object" src="img/art-bot-2.png" alt="">
-            <div class="articles-bottom-text">Screen Replacement Program</div>
-        </div>
-        <div class="col-md-4 articles-bottom">
-            <img class="media-object" src="img/art-bot-3.png" alt="">
-            <div class="articles-bottom-text">Еще какая-то статья про Apple</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 articles-bottom">
+                <img class="media-object" src="img/art-bot-1.png" alt="">
+                <div class="articles-bottom-text">Smart Battery Case Replacement Program</div>
+            </div>
+            <div class="col-md-4 articles-bottom">
+                <img class="media-object" src="img/art-bot-2.png" alt="">
+                <div class="articles-bottom-text">Screen Replacement Program</div>
+            </div>
+            <div class="col-md-4 articles-bottom">
+                <img class="media-object" src="img/art-bot-3.png" alt="">
+                <div class="articles-bottom-text">Еще какая-то статья про Apple</div>
+            </div>
         </div>
     </div>
 </div>
@@ -338,9 +345,6 @@
                     <div class="form-group">
                         <input name="phone" type="text" class="phone form-control" required
                                placeholder="Номер телефона*">
-                    </div>
-                    <div class="form-group">
-                        <input name="email" type="text" class="email form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <input name="submit" type="submit" class="submit center-block zayavka-submit"
