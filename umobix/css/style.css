@@ -693,4 +693,9 @@ ul.footer-bottom-nav .dropdown-menu {
         width: 50%;
         margin: 10px 0;
     }
+
+    h2 {
+        width: 98%;
+        margin: 0 auto 12px;
+    }
 }
