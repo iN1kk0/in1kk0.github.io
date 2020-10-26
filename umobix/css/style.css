@@ -8,7 +8,7 @@ a:hover {
 }
 
 .lang-icon-link:hover, .lang-icon-link {
-    text-decoration: none !important;git
+    text-decoration: none !important;
 }
 
 .top-menu .nav-link:hover {
@@ -337,7 +337,7 @@ img.icons-device {
     position: absolute;
     right: 0;
     top: 8px;
-    width: 80px;
+    /*width: 80px;*/
 }
 
 .seven-block h1 {
@@ -590,7 +590,28 @@ ul.footer-bottom-nav .dropdown-menu {
     text-align: right;
 }
 
+.article-list-mobile {
+    display: none;
+}
+
+
 @media screen and (max-width: 414px) {
+    .article-list-desktop, .icons-apps-desktop, .features-list-desktop {
+        display: none;
+    }
+
+    .article-list-mobile, .icons-apps-mobile, .features-list-mobile {
+        display: block !important;
+    }
+
+    .article-list-mobile .carousel-indicators {
+        bottom: -35px;
+    }
+
+    .article-list-mobile .carousel-indicators li {
+        background-color: gray;
+    }
+
     .row {
         margin-right: 0;
         margin-left: 0;
@@ -606,7 +627,7 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .quick-list img {
         width: 50px;
-        top: -20px;
+        top: -22px;
         left: -10px;
     }
 
@@ -666,8 +687,8 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .seven-block-left {
-        margin-top: 5rem !important;
-        margin-bottom: 5rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 3rem !important;
     }
 
     .article-list p {
@@ -728,5 +749,62 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .seven-block .view {
         background-position: unset !important;
+        background-image: none !important;
+        background: #F8FAFD;
     }
+
+    .seven-block-left h1 {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+
+    .features-list-mobile img.d-inline {
+        width: 40px;
+    }
+
+    .features-list-mobile .f-line {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .features-list-mobile .f-line:after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        background: url(../img/close.svg);
+    }
+
+    .features-list-mobile .f-line.collapsed:after {
+        background: url(../img/plus.svg);
+    }
+
+    .row.quick-list {
+        padding: 0px 30px;
+    }
+
+    .desc-block {
+        display: none;
+    }
+
+    .mob-block {
+        display: block !important;
+    }
+
+    .six-block .row {
+        margin-top: 20px;
+    }
+
+    .col-sm.right-block-form {
+        margin-bottom: 30px;
+    }
+
+    img.demo-image-block {
+        width: 100%;
+        display: block !important;
+    }
+
 }
