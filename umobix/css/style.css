@@ -130,6 +130,7 @@ a.navbar-brand.logo {
 
     a.try-now-button.button-style-1 {
         margin: 10px 0;
+        display: none;
     }
 }
 
@@ -202,12 +203,12 @@ h2 {
 }
 
 .container.second-block {
-    padding: 120px 0px;
+    padding: 80px 0px;
 }
 
 .container-fluid.third-block {
     background: #F8FAFD;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .third-block img {
@@ -216,11 +217,11 @@ h2 {
 }
 
 .container.fourth-block {
-    padding: 120px 0px;
+    padding: 80px 0px;
 }
 
 .icons-apps {
-    margin: 80px auto;
+    margin: 40px auto;
     display: block;
 }
 
@@ -250,7 +251,7 @@ h2 {
 
 .container-fluid.fifth-block {
     background: #F8FAFD;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .fifth-block h2 {
@@ -279,7 +280,7 @@ h2 {
 }
 
 .container.six-block {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 p {
@@ -332,7 +333,7 @@ img.icons-device {
     position: absolute;
     right: 0;
     top: 8px;
-    width: 120px;
+    width: 80px;
 }
 
 .seven-block h1 {
@@ -358,7 +359,7 @@ img.icons-device {
 }
 
 .container.eight-block {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .eight-block h2 {
@@ -396,7 +397,7 @@ img.icons-device {
 }
 
 .eight-block .row.tab-list {
-    margin: 40px 0 120px;
+    margin: 40px 0 80px;
 }
 
 .eight-block .row.tab-list .col-sm {
@@ -425,7 +426,7 @@ img.icons-device {
 
 .container-fluid.nine-block {
     background: #F8FAFD;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .nine-block h2 {
@@ -467,11 +468,11 @@ img.icons-device {
     position: absolute;
     right: 10px;
     bottom: 5px;
-    background: url(../img/close.png);
+    background: url(../img/close.svg);
 }
 
 .nine-block button.question.collapsed:after {
-    background: url(../img/plus.png);
+    background: url(../img/plus.svg);
 }
 
 .nine-block .col-sm.answer {
@@ -483,7 +484,7 @@ img.icons-device {
 }
 
 .container.ten-block {
-    padding: 120px 0px;
+    padding: 80px 0px;
 }
 
 .ten-block input {
@@ -508,7 +509,7 @@ img.icons-device {
 }
 
 footer {
-    padding: 120px 0 80px;
+    padding: 60px 0 40px;
     background: #081D31;
     color: #FFFFFF;
 }
@@ -592,7 +593,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     img.icons-apps {
-        width: 96%;
+        width: 94%;
     }
 
     p {
@@ -645,7 +646,11 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .container.second-block, .container-fluid.third-block, .container.fourth-block, .container-fluid.fifth-block, .container.six-block, .container.eight-block, .container-fluid.nine-block, .container.ten-block, .container.ten-block, footer {
-        padding: 60px 0;
+        padding: 40px 0;
+    }
+
+    .article-list {
+        margin-top: 40px;
     }
 
     .nine-block h2, .fifth-block h2 {
@@ -695,7 +700,28 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     h2 {
-        width: 98%;
+        width: 94%;
         margin: 0 auto 12px;
+        font-size: 32px;
+    }
+
+    .article-list img {
+        width: 100%;
+    }
+
+    .third-block img {
+        width: 94%;
+        margin: 40px auto 10px;
+    }
+
+    .btn-features {
+        margin: 20px auto 10px;
+    }
+
+    .eight-block h2 {
+        margin-bottom: 40px;
+    }
+    .seven-block .view {
+        background-position: unset !important;
     }
 }
