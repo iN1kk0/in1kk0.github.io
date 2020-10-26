@@ -7,6 +7,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.lang-icon-link:hover, .lang-icon-link {
+    text-decoration: none !important;git
+}
+
 .top-menu .nav-link:hover {
     color: #4376A6 !important;
     text-decoration: underline;
@@ -721,6 +725,7 @@ ul.footer-bottom-nav .dropdown-menu {
     .eight-block h2 {
         margin-bottom: 40px;
     }
+
     .seven-block .view {
         background-position: unset !important;
     }
