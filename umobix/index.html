@@ -18,20 +18,44 @@
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
     <script src="js/jquery.bcSwipe.min.js"></script>
-    <script>$('.carousel').bcSwipe({threshold: 50});</script>
+    <script>
+        $('.carousel').bcSwipe({threshold: 50});
+        $(document).ready(function () {
+            $('.navbar-toggler').on('click', function () {
+                $('.mobile-bg-shade').toggleClass('active');
+            });
+
+            $('.footer-first-block-mobile > a').on('click', function (e) {
+                e.preventDefault();
+                if ($(this).hasClass('hide')) {
+                    $(this).removeClass('hide');
+                    $(this).text('show more');
+                    $('.full-mob-text').hide();
+                    $('.min-mob-text').show();
+                } else {
+                    $(this).addClass('hide');
+                    $(this).text('hide');
+                    $('.min-mob-text').hide();
+                    $('.full-mob-text').show();
+                }
+            });
+        });
+    </script>
 
 </head>
 <body>
+<div class="mobile-bg-shade"></div>
 <div class="container">
     <nav class="top-menu navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo" href="/"><img src="img/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <a class="navbar-brand logo" href="/umobix/"><img src="img/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto top-first-menu">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +80,7 @@
                 </li>
             </ul>
 
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto top-second-menu">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle lang-icon-link" href="#" id="navbarDropdown1" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -396,7 +420,7 @@
             </div>
             <div class="col-sm">
                 <img class="d-inline" src="img/2.svg" alt="icon"><h6 class="d-inline">Install</h6>
-                <p>TEnter iCloud credentials of your child’s iOS device in your user account. Physical access to a
+                <p>Enter iCloud credentials of your child’s iOS device in your user account. Physical access to a
                     target iOS device may not be required.</p>
             </div>
             <div class="col-sm">
@@ -701,7 +725,7 @@
 <footer class="container-fluid">
     <div class="container">
         <div class="row first-footer-row">
-            <div class="col-4 footer-first-block">
+            <div class="col-4 footer-first-block footer-first-block-desktop">
                 <img src="img/logo-footer.svg" alt="icon"><br/>
                 <h6>SOFTWARE INTENDED FOR LEGAL USE ONLY. </h6>
                 <p>uMobix is a smartphone and tablet software designed for parents who wish to control their children
@@ -710,7 +734,21 @@
                     purposes. It’s illegal to use uMobix for monitoring...</p>
                 <a href="#">Show more</a>
             </div>
-            <div class="col-sm">
+            <div class="col-4 footer-first-block footer-first-block-mobile" style="display:none;">
+                <img src="img/logo-footer.svg" alt="icon"><br/>
+                <p class="min-mob-text">SOFTWARE INTENDED FOR LEGAL USE ONLY. uMobix is a smartphone and tablet software
+                    designed for parents who wish to control their children under 18 years... </p>
+                <p class="full-mob-text" style="display:none;">SOFTWARE INTENDED FOR LEGAL USE ONLY. uMobix is a
+                    smartphone and tablet
+                    software designed for parents who wish to control their children under 18 years. The buyer of the
+                    uMobix software must either own the smartphone or tablet or must have written consent from their
+                    children. The software is only to be used for ethical controlling purposes. It’s illegal to use
+                    uMobix for monitoring the digital devices of your spouse, girlfriend/boyfriend, or partner. It is
+                    the responsibility of the buyer to adhere to the local laws of their country or region. Failure to
+                    do so could result in severe monetary and criminal penalties imposed on the violator.</p>
+                <a href="#">Show more</a>
+            </div>
+            <div class="col-sm footer-first-block-desktop">
                 <span class="footer-menu-title">about us</span>
                 <ul>
                     <li><a href="#">Demo</a></li>
@@ -720,7 +758,24 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="col-sm footer-first-block-mobile" style="display:none;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFooter1" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            about us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownFooter1">
+                            <a class="dropdown-item" href="#">Demo</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                            <a class="dropdown-item" href="#">Features</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm footer-first-block-desktop">
                 <span class="footer-menu-title">service legal terms</span>
                 <ul>
                     <li><a href="#">Eula</a></li>
@@ -730,18 +785,51 @@
                     <li><a href="#">privacy notice</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
+            <div class="col-sm footer-first-block-mobile" style="display:none;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFooter2" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            service legal terms
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownFooter2">
+                            <a class="dropdown-item" href="#">Eula</a>
+                            <a class="dropdown-item" href="#">refund policy</a>
+                            <a class="dropdown-item" href="#">recurring policy</a>
+                            <a class="dropdown-item" href="#">cookie notice</a>
+                            <a class="dropdown-item" href="#">privacy notice</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm footer-first-block-desktop">
                 <span class="footer-menu-title">Partners</span>
                 <ul>
                     <li><a href="#">affiliate program</a></li>
                     <li><a href="#">reseller program</a></li>
                 </ul>
             </div>
-            <div class="col-sm">
-                <span class="footer-menu-title">Partners</span>
+            <div class="col-sm footer-first-block-mobile" style="display:none;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFooter3" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Partners
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownFooter3">
+                            <a class="dropdown-item" href="#">affiliate program</a>
+                            <a class="dropdown-item" href="#">reseller program</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm social-footer">
+                <span class="footer-menu-title">follow us</span>
                 <img src="img/fb.svg" alt="icon"> <img src="img/inst.svg" alt="icon"> <img src="img/yt.svg" alt="icon">
             </div>
         </div>
+        <hr>
         <div class="row second-footer-row">
             <div class="col-sm">
                 <ul class="footer-bottom-nav navbar-nav mr-auto">
