@@ -689,8 +689,18 @@ ul.footer-bottom-nav .dropdown-menu {
     display: none;
 }
 
+.mob-block {
+    display: none;
+}
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
+
+    .homepage .first-block-left h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 60px;
+    }
+
     .article-list-desktop, .icons-apps-desktop, .features-list-desktop, .footer-first-block-desktop {
         display: none;
     }
@@ -882,7 +892,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .row.quick-list {
-        padding: 0px 30px;
+        padding: 0px 20px;
     }
 
     .desc-block {
@@ -941,4 +951,332 @@ ul.footer-bottom-nav .dropdown-menu {
         margin-right: 10px;
     }
 
+    .features-list h6 {
+        font-size: 18px;
+    }
+
 }
+
+/*ios platform page*/
+
+.platform-ios .first-block-ios {
+    color: white;
+}
+
+.platform-ios .first-block-ios .first-block-left p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.platform-ios .first-block-left, .platform-ios .first-block-right {
+    margin-top: 3rem !important;
+    margin-bottom: 6rem !important;
+}
+
+.ios-platform-check-list {
+    margin-top: 3rem !important;
+}
+
+.ios-platform-check-list > div {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.ios-platform-check-list > div:before {
+    content: '';
+    width: 15px;
+    height: 12px;
+    background: url(../img/green-check.svg);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.features-ios-block {
+    padding: 80px 0;
+}
+
+.features-ios-block > p {
+    font-size: 18px;
+}
+
+.features-ios-block .features-list-desktop {
+    margin-top: 40px;
+}
+
+.features-ios-block .features-title-icon {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    bottom: 7px;
+}
+
+.features-ios-block .subtitle-ios-features {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #081D31;
+}
+
+.features-ios-block .features-ios-text {
+    font-size: 16px;
+    line-height: 180%;
+    color: #2E3C49;
+    margin-top: 10px;
+}
+
+.features-ios-block .feature-ios-social-list-item {
+    margin-bottom: 25px;
+}
+
+.features-ios-block .feature-ios-social-list-item img {
+    margin-right: 10px;
+}
+
+.features-ios-block .features-ios-text p {
+    margin-bottom: 25px;
+}
+
+.features-ios-block .feature-ios-image {
+    position: relative;
+    top: -40px;
+    max-width: 100%;
+}
+
+.features-ios-block .features-ios-nav {
+    padding-left: 60px;
+}
+
+.features-ios-block .features-ios-nav > div {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #0A0B0C;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #EAEBED;
+    position: relative;
+    width: 80%;
+}
+
+.features-ios-block .features-ios-nav > div:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    /*background: url("../img/green-dot.svg");*/
+    position: absolute;
+    display: inline-block;
+    left: -30px;
+    top: 10px;
+}
+
+.features-ios-block .features-ios-nav > div:hover {
+    cursor: pointer;
+}
+
+.features-ios-block .features-ios-nav > div:hover:before, .features-ios-block .features-ios-nav > div.active:before {
+    background: url("../img/green-dot.svg");
+}
+
+.features-ios-block .btn-features {
+    margin-left: 0;
+    width: 240px;
+}
+
+.platform-ios .advantages-ios-block {
+    background: #F8FAFD;
+    padding: 80px 0;
+}
+
+.platform-ios .advantages-ios-block h2 {
+    margin-bottom: 90px;
+}
+
+.platform-ios .compatible-ios-block {
+    padding: 80px 0;
+}
+
+.platform-ios .compatible-ios-block .row {
+    margin-top: 90px;
+}
+
+.platform-ios .compatible-ios-block .row p {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.platform-ios .compatible-ios-block input[type="text"] {
+    font-size: 15px;
+    line-height: 23px;
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-bottom: 1px solid #B2BECB;
+}
+
+.platform-ios .compatible-ios-block button.button-style-1 {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    /*width: 80px;*/
+}
+
+.platform-ios .how-work-ios-block {
+    padding: 80px 0;
+    background: #F8FAFD;
+}
+
+.platform-ios .how-work-ios-block h2 {
+    margin-bottom: 90px;
+}
+
+.platform-ios .how-isos-button {
+    width: 220px;
+    margin: 40px auto 0;
+    display: block;
+}
+
+.platform-ios .ios-faq-block {
+    padding: 80px 0;
+}
+
+.platform-ios .ios-faq-block h2 {
+    margin-bottom: 90px;
+}
+
+.platform-ios .ios-faq-block .card-header {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.platform-ios .ios-faq-block .accordion > .card {
+    border: none;
+    background: none;
+}
+
+.platform-ios .ios-faq-block button.question {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #081D31;
+    padding-left: 0;
+    text-decoration: none;
+    position: relative;
+}
+
+.platform-ios .ios-faq-block button.question.collapsed {
+    font-weight: normal;
+}
+
+.platform-ios .ios-faq-block button.question:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background: url(../img/close.svg);
+}
+
+.platform-ios .ios-faq-block button.question.collapsed:after {
+    background: url(../img/plus.svg);
+}
+
+.platform-ios .ios-faq-block .col-sm.answer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #2E3C49;
+}
+
+@media screen and (max-width: 768px) {
+    .features-ios-block {
+        padding: 40px 0;
+    }
+
+    .platform-ios .first-block-left h1 {
+        font-size: 24px;
+    }
+
+    .platform-ios .first-block-left h6 {
+        display: none;
+    }
+
+    .platform-ios .first-block-left {
+        margin-top: 6rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .platform-ios .first-block-right {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .ios-platform-check-list > div {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .platform-ios .first-block-ios .first-block-left p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .platform-ios .ios-platform-check-list {
+        margin-top: 1rem !important;
+    }
+
+    .platform-ios .top-ios-but-1-mob, .platform-ios .top-ios-but-2-mob {
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+
+    .platform-ios .top-ios-but-2-mob {
+        border: none !important;
+    }
+
+    .platform-ios .first-block-ios .view {
+        background-image: url(../img/bg-ios-platform-mob.jpg) !important;
+        padding-bottom: 15px;
+    }
+
+    .platform-ios .advantages-ios-block, .platform-ios .compatible-ios-block, .platform-ios .how-work-ios-block, .platform-ios .ios-faq-block {
+        padding: 40px 0;
+    }
+
+    .platform-ios .compatible-ios-block .row {
+        margin-top: 40px;
+    }
+
+    .platform-ios .advantages-ios-block h2, .platform-ios .how-work-ios-block h2, .platform-ios .ios-faq-block h2 {
+        margin-bottom: 40px;
+    }
+
+    .platform-ios .compatible-ios-block button.button-style-1 {
+        width: 100%;
+        position: unset;
+        margin-top: 20px;
+    }
+
+    .platform-ios .ios-faq-block button.question {
+        max-width: 90%;
+    }
+
+    .platform-ios .ios-faq-block button.question:after {
+        right: -30px;
+        top: 5px;
+    }
+}
+
