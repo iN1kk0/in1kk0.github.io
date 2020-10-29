@@ -1047,6 +1047,10 @@ ul.footer-bottom-nav .dropdown-menu {
     /*max-width: 100%;*/
 }
 
+.feature-ios-image {
+    width: 325px;
+}
+
 .features-ios-block .features-ios-nav {
     padding-left: 60px;
 }
@@ -1203,11 +1207,11 @@ ul.footer-bottom-nav .dropdown-menu {
     color: #2E3C49;
 }
 
-.platform-ios .features-ios-content{
+.platform-ios .features-ios-content {
     display: none;
 }
 
-.platform-ios .features-ios-content.active{
+.platform-ios .features-ios-content.active {
     display: flex !important;
 }
 
