@@ -156,7 +156,7 @@
             </div>
 
             <div class="col-5">
-                <img class="feature-ios-image" src="img/features-2.jpg"/>
+                <img class="feature-ios-image" src="img/features-2-fixed.jpg"/>
             </div>
         </div>
 
@@ -175,7 +175,7 @@
             </div>
 
             <div class="col-5">
-                <img class="feature-ios-image" src="img/features-3.jpg"/>
+                <img class="feature-ios-image" src="img/features-3-fixed.jpg"/>
             </div>
         </div>
 
@@ -193,7 +193,7 @@
             </div>
 
             <div class="col-5">
-                <img class="feature-ios-image" src="img/features-4.jpg"/>
+                <img class="feature-ios-image" src="img/features-4-fixed.jpg"/>
             </div>
         </div>
 
@@ -212,16 +212,16 @@
             </div>
 
             <div class="col-5">
-                <img class="feature-ios-image" src="img/features-5.jpg"/>
+                <img class="feature-ios-image" src="img/features-5-fixed.jpg"/>
             </div>
         </div>
 
         <div class="col-4 features-ios-nav">
-            <div class="features-ios-nav-item active" data-id="feature-1">Access Social Apps</div>
-            <div class="features-ios-nav-item" data-id="feature-2">Track calls</div>
-            <div class="features-ios-nav-item" data-id="feature-3">View contact list</div>
-            <div class="features-ios-nav-item" data-id="feature-4">Read iMessages</div>
-            <div class="features-ios-nav-item" data-id="feature-5">Monitor Browser</div>
+            <div class="features-ios-nav-item active" data-id="feature-1" data-nav-id="1">Access Social Apps</div>
+            <div class="features-ios-nav-item" data-id="feature-2" data-nav-id="2">Track calls</div>
+            <div class="features-ios-nav-item" data-id="feature-3" data-nav-id="3">View contact list</div>
+            <div class="features-ios-nav-item" data-id="feature-4" data-nav-id="4">Read iMessages</div>
+            <div class="features-ios-nav-item" data-id="feature-5" data-nav-id="5">Monitor Browser</div>
         </div>
 
     </div>
@@ -814,6 +814,8 @@
         });
 
 
+        let counter = 0;
+
         $('.features-ios-nav-item').on('click', function () {
             let curid = $(this).attr('data-id');
             $('.features-ios-nav-item').removeClass('active');
@@ -822,11 +824,11 @@
             //$('#' + curid).show();
             $(this).addClass('active');
             $('#' + curid).addClass('active');
+            //counter = $(this).attr('data-nav-id');
         });
 
         let slides = $('.features-ios-nav-item');
         let blocks = $('.features-ios-content');
-        let counter = 0;
 
         setInterval(function () {
             slides.removeClass('active');
@@ -835,7 +837,7 @@
             blocks.eq(counter).addClass('active');
             counter++;
 
-            if (counter == slides.length) counter = 0;
+            if (counter >= slides.length) counter = 0;
         }, 3000);
 
     });

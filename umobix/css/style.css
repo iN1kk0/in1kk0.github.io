@@ -1044,7 +1044,7 @@ ul.footer-bottom-nav .dropdown-menu {
 .features-ios-block .feature-ios-image {
     position: relative;
     top: -40px;
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 .features-ios-block .features-ios-nav {
