@@ -87,7 +87,7 @@
                         <h1 class="h1-responsive font-weight-bold mt-sm-5">uMobix iPhone tracker</h1>
                         <h6 class="mb-4">Monitor every step of your kids by getting full<br> instant access to their iOS
                             devices.</h6>
-                        <p>Start tracking in 5 minutes!</p>
+                        <p>Start monitoring in 5 minutes!</p>
                         <a href="#" class="button-style-1 mr-3 desc-block">try now</a>
                         <a href="#" class="button-style-2 desc-block">view demo</a>
                     </div>
@@ -242,7 +242,7 @@
             <div class="col-12">
                 <div id="heading_f_2" class="f-line collapsed" data-toggle="collapse" data-target="#collapse_f_2"
                      aria-expanded="false" aria-controls="collapse_f_2"><img class="d-inline"
-                                                                             src="img/sms-features-icon.svg"
+                                                                             src="img/contacts-feature-icon.svg"
                                                                              alt="icon"><h6 class="d-inline">
                     View contact list</h6>
                 </div>
@@ -253,7 +253,7 @@
             <div class="col-12">
                 <div id="heading_f_3" class="f-line collapsed" data-toggle="collapse" data-target="#collapse_f_3"
                      aria-expanded="false" aria-controls="collapse_f_3"><img class="d-inline"
-                                                                             src="img/social-features.svg"
+                                                                             src="img/sms-features-icon.svg"
                                                                              alt="icon"><h6 class="d-inline">Read
                     iMessages</h6>
                 </div>
@@ -324,7 +324,7 @@
         <div class="col-sm right-block-form">
             <input type="text" placeholder="Enter phone model e.g. iPhone 11">
             <button class="button-style-1">Check</button>
-            <img src="img/icons-devices-2.svg" class="icons-device" alt="icon"/>
+            <img src="img/icons-devices-2.svg" class="icons-device desc-block" alt="icon"/>
         </div>
         <div class="col-sm mob-block" style="display:none;">
             <p>uMobix is supported on all iPhones and iPads.
@@ -818,11 +818,26 @@
             let curid = $(this).attr('data-id');
             $('.features-ios-nav-item').removeClass('active');
             $('.features-ios-content').removeClass('active');
-            $('.features-ios-content').hide();
-            $('#' + curid).show();
+            //$('.features-ios-content').hide();
+            //$('#' + curid).show();
             $(this).addClass('active');
             $('#' + curid).addClass('active');
         });
+
+        let slides = $('.features-ios-nav-item');
+        let blocks = $('.features-ios-content');
+        let counter = 0;
+
+        setInterval(function () {
+            slides.removeClass('active');
+            blocks.removeClass('active');
+            slides.eq(counter).addClass('active');
+            blocks.eq(counter).addClass('active');
+            counter++;
+
+            if (counter == slides.length) counter = 0;
+        }, 3000);
+
     });
 </script>
 

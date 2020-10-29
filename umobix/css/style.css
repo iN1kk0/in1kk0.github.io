@@ -1083,6 +1083,10 @@ ul.footer-bottom-nav .dropdown-menu {
     background: url("../img/green-dot.svg");
 }
 
+/*.features-ios-block .features-ios-nav > div.active:before {
+    background: url("../img/green-dot.svg");
+}*/
+
 .features-ios-block .btn-features {
     margin-left: 0;
     width: 240px;
@@ -1197,6 +1201,14 @@ ul.footer-bottom-nav .dropdown-menu {
     font-size: 15px;
     line-height: 23px;
     color: #2E3C49;
+}
+
+.platform-ios .features-ios-content{
+    display: none;
+}
+
+.platform-ios .features-ios-content.active{
+    display: flex !important;
 }
 
 @media screen and (max-width: 768px) {
