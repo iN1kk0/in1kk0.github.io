@@ -312,7 +312,7 @@ h2 {
 }
 
 .icons-apps {
-    margin: 40px auto;
+    margin: 64px auto;
     display: block;
 }
 
@@ -699,6 +699,10 @@ ul.footer-bottom-nav .dropdown-menu {
 
 @media screen and (max-width: 768px) {
 
+    .icons-apps {
+        margin: 40px auto;
+    }
+
     .homepage .first-block-left h1 {
         font-size: 24px;
         line-height: 28px;
@@ -1046,13 +1050,13 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .features-ios-block .feature-ios-image {
-    position: relative;
-    top: -40px;
+    /*position: relative;
+    top: -40px;*/
     /*max-width: 100%;*/
 }
 
 .feature-ios-image {
-    width: 325px;
+    width: 280px;
 }
 
 .features-ios-block .features-ios-nav {
@@ -1307,7 +1311,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 }
 
-.nav-tabs{
+.nav-tabs {
     border-bottom: none;
 }
 
