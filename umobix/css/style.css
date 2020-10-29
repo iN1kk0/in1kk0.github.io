@@ -88,7 +88,8 @@ a.navbar-brand.logo {
 }
 
 .first-block-left {
-    margin-top: 8rem !important;
+    margin-top: 4rem !important;
+    margin-bottom: 5rem !important;
 }
 
 .first-block-left h1 {
@@ -340,7 +341,7 @@ h2 {
 .btn-features {
     display: block;
     width: 322px;
-    margin: 30px auto;
+    margin: 30px auto 0;
 }
 
 .container-fluid.fifth-block {
@@ -537,6 +538,7 @@ img.icons-device {
 .nine-block .accordion > .card {
     border: none;
     background: none;
+    border-bottom: 1px solid #B2BECB;
 }
 
 .nine-block button.question {
@@ -548,6 +550,7 @@ img.icons-device {
     padding-left: 0;
     text-decoration: none;
     position: relative;
+    padding-right: 0;
 }
 
 .nine-block button.question.collapsed {
@@ -560,7 +563,7 @@ img.icons-device {
     height: 32px;
     display: block;
     position: absolute;
-    right: 10px;
+    right: 0px;
     bottom: 5px;
     background: url(../img/close.svg);
 }
@@ -575,6 +578,7 @@ img.icons-device {
     font-size: 15px;
     line-height: 23px;
     color: #2E3C49;
+    padding-right: 80px;
 }
 
 .container.ten-block {
@@ -771,7 +775,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .nine-block button.question:after {
-        right: -30px;
+        right: -45px;
         top: 5px;
     }
 
@@ -1167,6 +1171,7 @@ ul.footer-bottom-nav .dropdown-menu {
 .platform-ios .ios-faq-block .accordion > .card {
     border: none;
     background: none;
+    border-bottom: 1px solid #B2BECB;
 }
 
 .platform-ios .ios-faq-block button.question {
@@ -1178,6 +1183,7 @@ ul.footer-bottom-nav .dropdown-menu {
     padding-left: 0;
     text-decoration: none;
     position: relative;
+    padding-right: 0;
 }
 
 .platform-ios .ios-faq-block button.question.collapsed {
@@ -1190,7 +1196,7 @@ ul.footer-bottom-nav .dropdown-menu {
     height: 32px;
     display: block;
     position: absolute;
-    right: 10px;
+    right: 0px;
     bottom: 5px;
     background: url(../img/close.svg);
 }
@@ -1205,6 +1211,7 @@ ul.footer-bottom-nav .dropdown-menu {
     font-size: 15px;
     line-height: 23px;
     color: #2E3C49;
+    padding-right: 80px;
 }
 
 .platform-ios .features-ios-content {
@@ -1291,8 +1298,16 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .platform-ios .ios-faq-block button.question:after {
-        right: -30px;
+        right: -45px;
         top: 5px;
     }
+
+    .col-sm.answer {
+        padding-right: 15px !important;
+    }
+}
+
+.nav-tabs{
+    border-bottom: none;
 }
 
