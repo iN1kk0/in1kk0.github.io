@@ -55,9 +55,10 @@ a.navbar-brand.logo {
 }
 
 .button-style-1:hover {
-    color: #00AE71;
-    background: transparent;
-    border: 2px solid #00AE71;
+    /*color: #00AE71;*/
+    color: white;
+    background: #02925F;
+    border: 2px solid #02925F;
     text-decoration: none;
 }
 
@@ -73,14 +74,19 @@ a.navbar-brand.logo {
     padding: 12px 0px;
     border: 2px solid #00AE71;
     display: inline-block;
-    width: 120px
+    width: 120px;
+    background: linear-gradient(to right, #00AE71 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 .button-style-2:hover {
     color: #FFFFFF;
-    background: #00AE71;
+    /*background: #00AE71;*/
     border: 2px solid #00AE71;
     text-decoration: none;
+    background-position: left bottom;
 }
 
 .first-block {
@@ -407,6 +413,10 @@ p {
     height: 54px;
     border: none;
     border-bottom: 1px solid #B2BECB;
+}
+
+input:focus{
+    border-bottom: 1px solid #0048B5 !important;
 }
 
 ::placeholder {
