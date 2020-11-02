@@ -1177,6 +1177,14 @@ ul.footer-bottom-nav .dropdown-menu {
     background: url(../img/green-check.svg);
     display: inline-block;
     margin-right: 20px;
+    float: left;
+    position: relative;
+    top: 8px;
+}
+
+.ios-platform-check-list > div > span {
+    display: block;
+    overflow: hidden;
 }
 
 .features-ios-block {
@@ -1410,6 +1418,9 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 @media screen and (max-width: 768px) {
+    .ios-platform-check-list > div:before{
+        top: 4px;
+    }
     .features-ios-block {
         padding: 48px 0;
     }
