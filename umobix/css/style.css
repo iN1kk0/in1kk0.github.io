@@ -48,10 +48,10 @@ a.navbar-brand.logo {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 12px 0px;
+    padding: 16px 0px;
     border: 2px solid #00AE71;
     display: inline-block;
-    width: 120px
+    width: 160px
 }
 
 .button-style-1:hover {
@@ -71,10 +71,10 @@ a.navbar-brand.logo {
     text-align: center;
     text-transform: uppercase;
     color: #00AE71;
-    padding: 12px 0px;
+    padding: 16px 0px;
     border: 2px solid #00AE71;
     display: inline-block;
-    width: 120px;
+    width: 160px;
     background: linear-gradient(to right, #00AE71 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -89,13 +89,20 @@ a.navbar-brand.logo {
     background-position: left bottom;
 }
 
+.top-menu .try-now-button {
+    width: 130px;
+    padding: 11px 0;
+}
+
 .first-block {
     min-height: 700px;
 }
 
 .first-block-left {
-    margin-top: 4rem !important;
-    margin-bottom: 5rem !important;
+    /*margin-top: 4rem !important;
+    margin-bottom: 5rem !important;*/
+    margin-top: 13rem !important;
+    margin-bottom: 14rem !important;
 }
 
 .first-block-left h1 {
@@ -346,8 +353,9 @@ h2 {
 
 .btn-features {
     display: block;
-    width: 322px;
+    width: 364px;
     margin: 30px auto 0;
+    max-width: 100%;
 }
 
 .container-fluid.fifth-block {
@@ -378,6 +386,7 @@ h2 {
     line-height: 23px;
     margin-top: 15px;
     color: #2E3C49;
+    max-width: 297px;
 }
 
 .container.six-block {
@@ -415,7 +424,7 @@ p {
     border-bottom: 1px solid #B2BECB;
 }
 
-input:focus{
+input:focus {
     border-bottom: 1px solid #0048B5 !important;
 }
 
@@ -437,7 +446,8 @@ img.icons-device {
 .six-block button.button-style-1 {
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 0;
+    /*top: 8px;*/
     /*width: 80px;*/
 }
 
@@ -475,8 +485,10 @@ img.icons-device {
     width: auto;
     height: auto;
     position: absolute;
-    left: -10px;
-    top: -38px;
+    /*left: -10px;
+    top: -38px;*/
+    left: -27px;
+    top: -40px;
     z-index: 1;
 }
 
@@ -493,6 +505,7 @@ img.icons-device {
     line-height: 23px;
     margin-top: 15px;
     color: #2E3C49;
+    max-width: 210px;
 }
 
 .eight-block .tab-content > .active {
@@ -707,7 +720,19 @@ ul.footer-bottom-nav .dropdown-menu {
     display: none;
 }
 
+.platform-page .phone-list .col-sm {
+    margin-left: 60px;
+}
+
 @media screen and (max-width: 768px) {
+
+    .platform-page .phone-list .col-sm {
+        margin-left: 0px;
+    }
+
+    .homepage .view {
+        background-image: url(../img/home-bg-mob.png) !important;
+    }
 
     .icons-apps {
         margin: 40px auto;
@@ -716,7 +741,48 @@ ul.footer-bottom-nav .dropdown-menu {
     .homepage .first-block-left h1 {
         font-size: 24px;
         line-height: 28px;
-        margin-top: 60px;
+        /*margin-top: 60px;*/
+        margin-top: 220px;
+    }
+
+    .quick-list p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .quick-list h6, h6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .six-block > p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .six-block .row p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .homepage .first-block-left h6 {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 30px 0 !important;
+    }
+
+    .button-style-1, .button-style-2 {
+        width: 140px;
+        padding: 13px 0px;
     }
 
     .article-list-desktop, .icons-apps-desktop, .features-list-desktop, .footer-first-block-desktop {
@@ -771,21 +837,32 @@ ul.footer-bottom-nav .dropdown-menu {
     .eight-block .row.tab-list {
         padding: 0 15px;
         border: none;
-        margin: 0px 0 80px;
+        margin: 0px 0 40px;
+    }
+
+    .phone-list h6 {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .phone-list img {
         position: unset;
-        height: 50px;
+        height: 40px;
         margin-right: 20px;
     }
 
     .phone-list p {
-        margin-left: 30px;
+        padding-left: 30px;
+        max-width: 100%;
+        margin: 0 0 30px 30px;
     }
 
     .nine-block button.question {
         max-width: 90%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .nine-block button.question:after {
@@ -820,10 +897,30 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .article-list p {
         padding-left: 0;
+        font-size: 13px;
+    }
+
+    .second-block h6 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
     }
 
     .first-block-left {
         margin-top: 5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .avaliable-line {
+        margin-top: 35px;
     }
 
     .row.second-footer-row, .row.second-footer-row .col-sm.desc-right {
@@ -854,7 +951,11 @@ ul.footer-bottom-nav .dropdown-menu {
     h2 {
         width: 94%;
         margin: 0 auto 12px;
-        font-size: 32px;
+        /*font-size: 32px;*/
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .article-list img {
@@ -868,6 +969,7 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .btn-features {
         margin: 20px auto 10px;
+        width: 240px;
     }
 
     .eight-block h2 {
@@ -881,8 +983,17 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .seven-block-left h1 {
-        font-size: 32px;
-        margin: 20px 0;
+        /*font-size: 32px;
+        margin: 20px 0;*/
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    .seven-block-left a.button-style-2 {
+        width: 100%;
     }
 
     .features-list-mobile img.d-inline {
@@ -891,7 +1002,7 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .features-list-mobile .f-line {
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .features-list-mobile .f-line:after {
@@ -970,25 +1081,46 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .features-list h6 {
-        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
     }
 
+    .features-list p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 10px;
+    }
+
+    .ten-block img {
+        width: 120px;
+    }
+
+    .ten-block h6 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
 
 /*ios platform page*/
 
-.platform-ios .first-block-ios {
+.platform-page .first-block-ios {
     color: white;
 }
 
-.platform-ios .first-block-ios .first-block-left p {
+.platform-page .first-block-ios .first-block-left p {
     font-size: 16px;
     margin-bottom: 25px;
     color: white;
 }
 
-.platform-ios .first-block-left, .platform-ios .first-block-right {
-    margin-top: 3rem !important;
+.platform-page .first-block-left, .platform-page .first-block-right {
+    margin-top: 4rem !important;
     margin-bottom: 6rem !important;
 }
 
@@ -1114,29 +1246,29 @@ ul.footer-bottom-nav .dropdown-menu {
     width: 240px;
 }
 
-.platform-ios .advantages-ios-block {
+.platform-page .advantages-ios-block {
     background: #F8FAFD;
     padding: 80px 0;
 }
 
-.platform-ios .advantages-ios-block h2 {
+.platform-page .advantages-ios-block h2 {
     margin-bottom: 90px;
 }
 
-.platform-ios .compatible-ios-block {
+.platform-page .compatible-ios-block {
     padding: 80px 0;
 }
 
-.platform-ios .compatible-ios-block .row {
+.platform-page .compatible-ios-block .row {
     margin-top: 90px;
 }
 
-.platform-ios .compatible-ios-block .row p {
+.platform-page .compatible-ios-block .row p {
     font-size: 15px;
     line-height: 23px;
 }
 
-.platform-ios .compatible-ios-block input[type="text"] {
+.platform-page .compatible-ios-block input[type="text"] {
     font-size: 15px;
     line-height: 23px;
     width: 100%;
@@ -1145,50 +1277,50 @@ ul.footer-bottom-nav .dropdown-menu {
     border-bottom: 1px solid #B2BECB;
 }
 
-.platform-ios .compatible-ios-block button.button-style-1 {
+.platform-page .compatible-ios-block button.button-style-1 {
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 0;
     /*width: 80px;*/
 }
 
-.platform-ios .how-work-ios-block {
+.platform-page .how-work-ios-block {
     padding: 80px 0;
     background: #F8FAFD;
 }
 
-.platform-ios .how-work-ios-block h2 {
+.platform-page .how-work-ios-block h2 {
     margin-bottom: 90px;
 }
 
-.platform-ios .how-isos-button {
-    width: 220px;
+.platform-page .how-isos-button {
+    width: 250px;
     margin: 40px auto 0;
     display: block;
 }
 
-.platform-ios .ios-faq-block {
+.platform-page .ios-faq-block {
     padding: 80px 0;
 }
 
-.platform-ios .ios-faq-block h2 {
+.platform-page .ios-faq-block h2 {
     margin-bottom: 90px;
 }
 
-.platform-ios .ios-faq-block .card-header {
+.platform-page .ios-faq-block .card-header {
     background: none;
     padding-left: 0;
     padding-right: 0;
     border: none;
 }
 
-.platform-ios .ios-faq-block .accordion > .card {
+.platform-page .ios-faq-block .accordion > .card {
     border: none;
     background: none;
     border-bottom: 1px solid #B2BECB;
 }
 
-.platform-ios .ios-faq-block button.question {
+.platform-page .ios-faq-block button.question {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1200,11 +1332,11 @@ ul.footer-bottom-nav .dropdown-menu {
     padding-right: 0;
 }
 
-.platform-ios .ios-faq-block button.question.collapsed {
+.platform-page .ios-faq-block button.question.collapsed {
     font-weight: normal;
 }
 
-.platform-ios .ios-faq-block button.question:after {
+.platform-page .ios-faq-block button.question:after {
     content: '';
     width: 32px;
     height: 32px;
@@ -1215,11 +1347,11 @@ ul.footer-bottom-nav .dropdown-menu {
     background: url(../img/close.svg);
 }
 
-.platform-ios .ios-faq-block button.question.collapsed:after {
+.platform-page .ios-faq-block button.question.collapsed:after {
     background: url(../img/plus.svg);
 }
 
-.platform-ios .ios-faq-block .col-sm.answer {
+.platform-page .ios-faq-block .col-sm.answer {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -1228,11 +1360,11 @@ ul.footer-bottom-nav .dropdown-menu {
     padding-right: 80px;
 }
 
-.platform-ios .features-ios-content {
+.platform-page .features-ios-content {
     display: none;
 }
 
-.platform-ios .features-ios-content.active {
+.platform-page .features-ios-content.active {
     display: flex !important;
 }
 
@@ -1241,20 +1373,20 @@ ul.footer-bottom-nav .dropdown-menu {
         padding: 40px 0;
     }
 
-    .platform-ios .first-block-left h1 {
+    .platform-page .first-block-left h1 {
         font-size: 24px;
     }
 
-    .platform-ios .first-block-left h6 {
+    .platform-page .first-block-left h6 {
         display: none;
     }
 
-    .platform-ios .first-block-left {
+    .platform-page .first-block-left {
         margin-top: 6rem !important;
         margin-bottom: 0 !important;
     }
 
-    .platform-ios .first-block-right {
+    .platform-page .first-block-right {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
@@ -1265,59 +1397,89 @@ ul.footer-bottom-nav .dropdown-menu {
         line-height: 21px;
     }
 
-    .platform-ios .first-block-ios .first-block-left p {
+    .platform-page .first-block-ios .first-block-left p {
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
     }
 
-    .platform-ios .ios-platform-check-list {
+    .platform-page .ios-platform-check-list {
         margin-top: 1rem !important;
     }
 
-    .platform-ios .top-ios-but-1-mob, .platform-ios .top-ios-but-2-mob {
+    .platform-page .top-ios-but-1-mob, .platform-page .top-ios-but-2-mob {
         width: 100%;
         margin: 10px 0 !important;
     }
 
-    .platform-ios .top-ios-but-2-mob {
+    .platform-page .top-ios-but-2-mob {
         border: none !important;
     }
 
-    .platform-ios .first-block-ios .view {
+    .platform-page .first-block-ios .view {
         background-image: url(../img/bg-ios-platform-mob.jpg) !important;
         padding-bottom: 15px;
     }
 
-    .platform-ios .advantages-ios-block, .platform-ios .compatible-ios-block, .platform-ios .how-work-ios-block, .platform-ios .ios-faq-block {
+    .platform-page .advantages-ios-block, .platform-page .compatible-ios-block, .platform-page .how-work-ios-block, .platform-page .ios-faq-block {
         padding: 40px 0;
     }
 
-    .platform-ios .compatible-ios-block .row {
-        margin-top: 40px;
+    .platform-page .compatible-ios-block .row {
+        margin-top: 20px;
     }
 
-    .platform-ios .advantages-ios-block h2, .platform-ios .how-work-ios-block h2, .platform-ios .ios-faq-block h2 {
+    .platform-page .compatible-ios-block .row p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .platform-page .advantages-ios-block h2, .platform-page .how-work-ios-block h2, .platform-page .ios-faq-block h2 {
         margin-bottom: 40px;
     }
 
-    .platform-ios .compatible-ios-block button.button-style-1 {
+    .platform-page .compatible-ios-block button.button-style-1 {
         width: 100%;
         position: unset;
         margin-top: 20px;
     }
 
-    .platform-ios .ios-faq-block button.question {
+    .platform-page .ios-faq-block button.question {
         max-width: 90%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
     }
 
-    .platform-ios .ios-faq-block button.question:after {
+    .container-fluid.ios-faq-block {
+        padding-top: 60px;
+    }
+
+    .platform-page .ios-faq-block button.question:after {
         right: -45px;
         top: 5px;
     }
 
     .col-sm.answer {
         padding-right: 15px !important;
+        font-style: normal !important;
+        font-weight: 300 !important;
+        font-size: 13px !important;
+        line-height: 160% !important;
+        padding-left: 12px;
+    }
+
+    .card-body {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .features-ios-block > p {
+        font-size: 13px;
     }
 }
 
@@ -1325,3 +1487,61 @@ ul.footer-bottom-nav .dropdown-menu {
     border-bottom: none;
 }
 
+.dropdown-toggle::after {
+    background: url(../img/arrow-menu.svg);
+    width: 8px;
+    height: 5px;
+    border: none !important;
+    background-size: cover;
+    background-position: center;
+    vertical-align: 1px;
+    margin-left: 8px;
+}
+
+.top-second-menu li:last-child a {
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: #081D31;
+    font-weight: bold;
+}
+
+.social-footer img {
+    margin-right: 18px;
+}
+
+.features-android-social-icons {
+    margin: 2px 0 18px;
+}
+
+.features-android-nav > div {
+    margin-bottom: 8px !important;
+    padding-bottom: 8px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+}
+
+.features-android-nav > div:before {
+    display: none !important;
+}
+
+.features-android-nav > div.active {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.features-android-list-desktop .feature-ios-image {
+    width: 202px;
+    margin-left: 40px;
+}
+
+img.icons-device-android.desc-block {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 15px;
+}
