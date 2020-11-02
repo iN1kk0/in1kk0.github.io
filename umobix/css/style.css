@@ -722,13 +722,13 @@ ul.footer-bottom-nav .dropdown-menu {
     display: none;
 }
 
-.platform-page .phone-list .col-sm {
+.phone-list .col-sm {
     margin-left: 60px;
 }
 
 @media screen and (max-width: 768px) {
 
-    .platform-page .phone-list .col-sm {
+    .phone-list .col-sm {
         margin-left: 0px;
     }
 

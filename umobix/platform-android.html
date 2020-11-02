@@ -866,10 +866,19 @@
             <div class="col-4 footer-first-block footer-first-block-desktop">
                 <img src="img/logo-footer.svg" alt="icon"><br/>
                 <h6>SOFTWARE INTENDED FOR LEGAL USE ONLY. </h6>
-                <p>uMobix is a smartphone and tablet software designed for parents who wish to control their children
+                <p class="min-desk-text">uMobix is a smartphone and tablet software designed for parents who wish to
+                    control their children
                     under 18 years. The buyer of the uMobix software must either own the smartphone or tablet or must
                     have written consent from their children. The software is only to be used for ethical controlling
                     purposes. It’s illegal to use uMobix for monitoring...</p>
+                <p class="full-desk-text" style="display:none;">uMobix is a smartphone and tablet software designed for
+                    parents who wish to control their children
+                    under 18 years. The buyer of the uMobix software must either own the smartphone or tablet or must
+                    have written consent from their children. The software is only to be used for ethical controlling
+                    purposes. It’s illegal to use uMobix for monitoring the digital devices of your spouse,
+                    girlfriend/boyfriend, or partner. It is the responsibility of the buyer to adhere to the local laws
+                    of their country or region. Failure to do so could result in severe monetary and criminal penalties
+                    imposed on the violator.</p>
                 <a href="#">Show more</a>
             </div>
             <div class="col-4 footer-first-block footer-first-block-mobile" style="display:none;">
@@ -1026,6 +1035,20 @@
             }
         });
 
+        $('.footer-first-block-desktop > a').on('click', function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('hide')) {
+                $(this).removeClass('hide');
+                $(this).text('show more');
+                $('.full-desk-text').hide();
+                $('.min-desk-text').show();
+            } else {
+                $(this).addClass('hide');
+                $(this).text('hide');
+                $('.min-desk-text').hide();
+                $('.full-desk-text').show();
+            }
+        });
 
         let counter = 0;
 
