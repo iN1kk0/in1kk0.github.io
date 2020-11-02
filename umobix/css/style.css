@@ -732,7 +732,7 @@ ul.footer-bottom-nav .dropdown-menu {
         margin-left: 0px;
     }
 
-    .platform-page .phone-list .col-sm:last-child p {
+    .phone-list .col-sm:last-child p {
         margin-bottom: 0px;
     }
 
@@ -983,7 +983,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .btn-features {
-        margin: 20px auto 10px;
+        margin: 40px auto 10px;
         width: 240px;
     }
 
