@@ -317,17 +317,17 @@
         </div>
 
         <div class="col-4 features-ios-nav features-android-nav">
-            <div class="features-ios-nav-item active" data-id="feature-1" data-nav-id="1">Monitor social media</div>
-            <div class="features-ios-nav-item" data-id="feature-2" data-nav-id="2">Access Messaging Apps</div>
-            <div class="features-ios-nav-item" data-id="feature-3" data-nav-id="3">Track calls</div>
-            <div class="features-ios-nav-item" data-id="feature-4" data-nav-id="4">View contact list</div>
-            <div class="features-ios-nav-item" data-id="feature-5" data-nav-id="5">Read Text Messages</div>
-            <div class="features-ios-nav-item" data-id="feature-6" data-nav-id="6">Snoop on Browser History</div>
-            <div class="features-ios-nav-item" data-id="feature-7" data-nav-id="7">Track GPS-Location</div>
-            <div class="features-ios-nav-item" data-id="feature-8" data-nav-id="8">Get into Photo Gallery</div>
-            <div class="features-ios-nav-item" data-id="feature-9" data-nav-id="9">Use Keylogger</div>
-            <div class="features-ios-nav-item" data-id="feature-10" data-nav-id="10">Check Device Info</div>
-            <div class="features-ios-nav-item" data-id="feature-11" data-nav-id="11">Receive notifications</div>
+            <div class="features-ios-nav-item active" data-id="feature-1" data-nav-id="0">Monitor social media</div>
+            <div class="features-ios-nav-item" data-id="feature-2" data-nav-id="1">Access Messaging Apps</div>
+            <div class="features-ios-nav-item" data-id="feature-3" data-nav-id="2">Track calls</div>
+            <div class="features-ios-nav-item" data-id="feature-4" data-nav-id="3">View contact list</div>
+            <div class="features-ios-nav-item" data-id="feature-5" data-nav-id="4">Read Text Messages</div>
+            <div class="features-ios-nav-item" data-id="feature-6" data-nav-id="5">Snoop on Browser History</div>
+            <div class="features-ios-nav-item" data-id="feature-7" data-nav-id="6">Track GPS-Location</div>
+            <div class="features-ios-nav-item" data-id="feature-8" data-nav-id="7">Get into Photo Gallery</div>
+            <div class="features-ios-nav-item" data-id="feature-9" data-nav-id="8">Use Keylogger</div>
+            <div class="features-ios-nav-item" data-id="feature-10" data-nav-id="9">Check Device Info</div>
+            <div class="features-ios-nav-item" data-id="feature-11" data-nav-id="10">Receive notifications</div>
         </div>
 
     </div>
@@ -1037,7 +1037,7 @@
             //$('#' + curid).show();
             $(this).addClass('active');
             $('#' + curid).addClass('active');
-            //counter = $(this).attr('data-nav-id');
+            counter = $(this).attr('data-nav-id');
         });
 
         let slides = $('.features-ios-nav-item');
@@ -1048,9 +1048,10 @@
             blocks.removeClass('active');
             slides.eq(counter).addClass('active');
             blocks.eq(counter).addClass('active');
-            counter++;
 
+            counter++;
             if (counter >= slides.length) counter = 0;
+
         }, 6000);
 
     });

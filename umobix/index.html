@@ -134,7 +134,30 @@
         </div>
     </div>
 
-    <div id="carouselExampleCaptions" data-ride="carousel" class="row article-list article-list-mobile carousel slide">
+    <div class="row article-list article-list-mobile">
+        <div class="slick-slider">
+            <div class="col-sm">
+                <img src="img/block-2-img-1.svg" alt="icon">
+                <h6>Internet addiction</h6>
+                <p>Unlimited access to the Internet leads to real addiction. Cell phone tracker allows you to detect
+                    activities that have been attracting your kid’s interest and take measures right on time.</p>
+            </div>
+            <div class="col-sm">
+                <img src="img/block-2-img-2.svg" alt="icon">
+                <h6>Cyberbullying</h6>
+                <p>Adult websites are ranked as №3 major health concern for kids. Mobile tracker lets you monitor
+                    website history to detect any inapropriate sites that your kid may visit./p>
+            </div>
+            <div class="col-sm">
+                <img src="img/block-2-img-3.svg" alt="icon">
+                <h6>Adult websites browsing</h6>
+                <p>Adult websites are ranked as №3 major health concern for kids. Mobile tracker lets you monitor
+                    website history to detect any inapropriate sites that your kid may visit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--div id="carouselExampleCaptions" data-ride="carousel" class="row article-list article-list-mobile carousel slide">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -179,7 +202,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div-->
 </div>
 
 <div class="container-fluid third-block">
@@ -335,7 +358,7 @@
 </div>
 
 <div class="container-fluid seven-block">
-    <img src="img/mobile-demo-bg.jpg" class="demo-image-block" style="display:none;"/>
+    <img src="img/mobile-demo-bg-2x.png" class="demo-image-block" style="display:none;"/>
     <div class="view"
          style="background-image: url('img/banner-image-2-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="align-middle mask rgba-gradient d-flex justify-content-center align-items-center">
@@ -845,10 +868,28 @@
     </div>
 </footer>
 
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<script type="text/javascript" src="js/slick.min.js"></script>
 
-<script src="js/jquery.bcSwipe.min.js"></script>
 <script>
-    $('.carousel').bcSwipe({threshold: 50});
+    $(document).ready(function () {
+        $('.slick-slider').slick({
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: false,
+            variableWidth: true
+        });
+    });
+</script>
+
+
+<!--script src="js/jquery.bcSwipe.min.js"></script-->
+<script>
+    /*$('.carousel').bcSwipe({threshold: 50});*/
+
     $(document).ready(function () {
         $('.navbar-toggler').on('click', function () {
             $('.mobile-bg-shade').toggleClass('active');

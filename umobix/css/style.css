@@ -748,6 +748,7 @@ ul.footer-bottom-nav .dropdown-menu {
     .quick-list p {
         font-size: 13px;
         line-height: 20px;
+        padding-left: 2px;
     }
 
     ::placeholder {
@@ -771,6 +772,7 @@ ul.footer-bottom-nav .dropdown-menu {
         font-weight: normal;
         font-size: 12px;
         line-height: 20px;
+        text-align: center;
     }
 
     .homepage .first-block-left h6 {
@@ -867,7 +869,8 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .nine-block button.question:after {
         right: -45px;
-        top: 5px;
+        /*top: 5px;*/
+        top: 0;
     }
 
     .container.ten-block {
@@ -898,6 +901,7 @@ ul.footer-bottom-nav .dropdown-menu {
     .article-list p {
         padding-left: 0;
         font-size: 13px;
+        line-height: 20px;
     }
 
     .second-block h6 {
@@ -996,8 +1000,12 @@ ul.footer-bottom-nav .dropdown-menu {
         width: 100%;
     }
 
+    .features-list > div {
+        margin-bottom: 10px;
+    }
+
     .features-list-mobile img.d-inline {
-        width: 40px;
+        width: 24px;
     }
 
     .features-list-mobile .f-line {
@@ -1012,7 +1020,8 @@ ul.footer-bottom-nav .dropdown-menu {
         display: block;
         position: absolute;
         right: 10px;
-        bottom: 5px;
+        /*bottom: 5px;*/
+        top: -4px;
         background: url(../img/close.svg);
     }
 
@@ -1085,6 +1094,7 @@ ul.footer-bottom-nav .dropdown-menu {
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
+        margin-left: 20px;
     }
 
     .features-list p {
@@ -1093,6 +1103,8 @@ ul.footer-bottom-nav .dropdown-menu {
         font-size: 12px;
         line-height: 20px;
         margin: 10px;
+        padding-right: 5px;
+        padding-left: 35px;
     }
 
     .ten-block img {
@@ -1195,6 +1207,8 @@ ul.footer-bottom-nav .dropdown-menu {
     /*position: relative;
     top: -40px;*/
     /*max-width: 100%;*/
+    width: 222px;
+    margin-left: 30px;
 }
 
 .feature-ios-image {
@@ -1435,6 +1449,7 @@ ul.footer-bottom-nav .dropdown-menu {
         font-size: 12px;
         line-height: 20px;
         margin-bottom: 0;
+        text-align: center;
     }
 
     .platform-page .advantages-ios-block h2, .platform-page .how-work-ios-block h2, .platform-page .ios-faq-block h2 {
@@ -1461,7 +1476,8 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .platform-page .ios-faq-block button.question:after {
         right: -45px;
-        top: 5px;
+        /*top: 5px;*/
+        top: 0;
     }
 
     .col-sm.answer {
@@ -1480,6 +1496,15 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .features-ios-block > p {
         font-size: 13px;
+    }
+
+    .slick-slide{
+        width: 300px !important;
+        padding: 0 10px !important;
+    }
+
+    .slick-dots button {
+        display: none;
     }
 }
 
@@ -1518,8 +1543,8 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .features-android-nav > div {
-    margin-bottom: 8px !important;
-    padding-bottom: 8px !important;
+    margin-bottom: 9px !important;
+    padding-bottom: 9px !important;
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 15px !important;
@@ -1532,11 +1557,11 @@ ul.footer-bottom-nav .dropdown-menu {
 
 .features-android-nav > div.active {
     font-weight: 600 !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 .features-android-list-desktop .feature-ios-image {
-    width: 202px;
+    width: 211px;
     margin-left: 40px;
 }
 

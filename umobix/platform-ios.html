@@ -217,11 +217,11 @@
         </div>
 
         <div class="col-4 features-ios-nav">
-            <div class="features-ios-nav-item active" data-id="feature-1" data-nav-id="1">Access Social Apps</div>
-            <div class="features-ios-nav-item" data-id="feature-2" data-nav-id="2">Track calls</div>
-            <div class="features-ios-nav-item" data-id="feature-3" data-nav-id="3">View contact list</div>
-            <div class="features-ios-nav-item" data-id="feature-4" data-nav-id="4">Read iMessages</div>
-            <div class="features-ios-nav-item" data-id="feature-5" data-nav-id="5">Monitor Browser</div>
+            <div class="features-ios-nav-item active" data-id="feature-1" data-nav-id="0">Access Social Apps</div>
+            <div class="features-ios-nav-item" data-id="feature-2" data-nav-id="1">Track calls</div>
+            <div class="features-ios-nav-item" data-id="feature-3" data-nav-id="2">View contact list</div>
+            <div class="features-ios-nav-item" data-id="feature-4" data-nav-id="3">Read iMessages</div>
+            <div class="features-ios-nav-item" data-id="feature-5" data-nav-id="4">Monitor Browser</div>
         </div>
 
     </div>
@@ -243,8 +243,7 @@
                 <div id="heading_f_2" class="f-line collapsed" data-toggle="collapse" data-target="#collapse_f_2"
                      aria-expanded="false" aria-controls="collapse_f_2"><img class="d-inline"
                                                                              src="img/contacts-feature-icon.svg"
-                                                                             alt="icon"><h6 class="d-inline">
-                    View contact list</h6>
+                                                                             alt="icon"><h6 class="d-inline">View contact list</h6>
                 </div>
                 <p id="collapse_f_2" class="collapse" aria-labelledby="heading_f_2" data-parent="#accordion_f_1">Check
                     names and details in a target phone book. Learn everything about new encounters with a target
@@ -274,8 +273,7 @@
             <div class="col-12">
                 <div id="heading_f_5" class="f-line collapsed" data-toggle="collapse" data-target="#collapse_f_5"
                      aria-expanded="false" aria-controls="collapse_f_5">
-                    <img class="d-inline" src="img/browser-history-features-icon.svg" alt="icon"><h6 class="d-inline">
-                    Monitor browser
+                    <img class="d-inline" src="img/browser-history-features-icon.svg" alt="icon"><h6 class="d-inline">Monitor browser
                     history</h6>
                 </div>
                 <p id="collapse_f_5" class="collapse" aria-labelledby="heading_f_5" data-parent="#accordion_f_1">Check
@@ -830,7 +828,7 @@
             //$('#' + curid).show();
             $(this).addClass('active');
             $('#' + curid).addClass('active');
-            //counter = $(this).attr('data-nav-id');
+            counter = $(this).attr('data-nav-id');
         });
 
         let slides = $('.features-ios-nav-item');
