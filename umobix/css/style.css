@@ -172,7 +172,7 @@ a.navbar-brand.logo {
 }
 
 .article-list {
-    margin-top: 68px;
+    margin-top: 64px;
 }
 
 h2 {
@@ -307,21 +307,21 @@ h2 {
 }
 
 .container.second-block {
-    padding: 80px 0px;
+    padding: 88px 0px;
 }
 
 .container-fluid.third-block {
     background: #F8FAFD;
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .third-block img {
-    margin: 80px auto 0;
+    margin: 64px auto 0;
     display: block;
 }
 
 .container.fourth-block {
-    padding: 80px 0px;
+    padding: 88px 0px;
 }
 
 .icons-apps {
@@ -360,11 +360,11 @@ h2 {
 
 .container-fluid.fifth-block {
     background: #F8FAFD;
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .fifth-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 106px;
 }
 
 .quick-list img {
@@ -387,10 +387,11 @@ h2 {
     margin-top: 15px;
     color: #2E3C49;
     max-width: 297px;
+    margin-bottom: 0;
 }
 
 .container.six-block {
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 p {
@@ -403,7 +404,7 @@ p {
 }
 
 .six-block .row {
-    margin-top: 90px;
+    margin-top: 64px;
 }
 
 .six-block .row p {
@@ -474,11 +475,11 @@ img.icons-device {
 }
 
 .container.eight-block {
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .eight-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 64px;
 }
 
 .phone-list img {
@@ -506,6 +507,7 @@ img.icons-device {
     margin-top: 15px;
     color: #2E3C49;
     max-width: 210px;
+    margin-bottom: 0;
 }
 
 .eight-block .tab-content > .active {
@@ -544,11 +546,11 @@ img.icons-device {
 
 .container-fluid.nine-block {
     background: #F8FAFD;
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .nine-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 64px;
 }
 
 .nine-block .card-header {
@@ -605,7 +607,7 @@ img.icons-device {
 }
 
 .container.ten-block {
-    padding: 80px 0px;
+    padding: 88px 0px;
 }
 
 .ten-block input {
@@ -730,6 +732,10 @@ ul.footer-bottom-nav .dropdown-menu {
         margin-left: 0px;
     }
 
+    .platform-page .phone-list .col-sm:last-child p {
+        margin-bottom: 0px;
+    }
+
     .homepage .view {
         background-image: url(../img/home-bg-mob.png) !important;
     }
@@ -828,6 +834,11 @@ ul.footer-bottom-nav .dropdown-menu {
 
     .quick-list .col-sm {
         margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .quick-list .col-sm:last-child {
+        margin-bottom: 0;
     }
 
     .six-block button.button-style-1 {
@@ -878,7 +889,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .container.second-block, .container-fluid.third-block, .container.fourth-block, .container-fluid.fifth-block, .container.six-block, .container.eight-block, .container-fluid.nine-block, .container.ten-block, .container.ten-block, footer {
-        padding: 40px 0;
+        padding: 48px 0;
     }
 
     .article-list {
@@ -1004,6 +1015,14 @@ ul.footer-bottom-nav .dropdown-menu {
         margin-bottom: 10px;
     }
 
+    .features-list > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .features-list-mobile {
+        margin-top: 40px;
+    }
+
     .features-list-mobile img.d-inline {
         width: 24px;
     }
@@ -1011,6 +1030,10 @@ ul.footer-bottom-nav .dropdown-menu {
     .features-list-mobile .f-line {
         position: relative;
         margin-bottom: 10px;
+    }
+
+    .features-list > div:last-child .f-line {
+        margin-bottom: 0;
     }
 
     .features-list-mobile .f-line:after {
@@ -1157,7 +1180,7 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .features-ios-block {
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .features-ios-block > p {
@@ -1165,7 +1188,11 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .features-ios-block .features-list-desktop {
-    margin-top: 40px;
+    margin-top: 64px;
+}
+
+.features-ios-block .features-ios-nav > div:last-child {
+    margin-bottom: 0;
 }
 
 .features-ios-block .features-title-icon {
@@ -1262,19 +1289,19 @@ ul.footer-bottom-nav .dropdown-menu {
 
 .platform-page .advantages-ios-block {
     background: #F8FAFD;
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .platform-page .advantages-ios-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 106px;
 }
 
 .platform-page .compatible-ios-block {
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .platform-page .compatible-ios-block .row {
-    margin-top: 90px;
+    margin-top: 64px;
 }
 
 .platform-page .compatible-ios-block .row p {
@@ -1299,12 +1326,12 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .platform-page .how-work-ios-block {
-    padding: 80px 0;
+    padding: 88px 0;
     background: #F8FAFD;
 }
 
 .platform-page .how-work-ios-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 104px;
 }
 
 .platform-page .how-isos-button {
@@ -1314,11 +1341,11 @@ ul.footer-bottom-nav .dropdown-menu {
 }
 
 .platform-page .ios-faq-block {
-    padding: 80px 0;
+    padding: 88px 0;
 }
 
 .platform-page .ios-faq-block h2 {
-    margin-bottom: 90px;
+    margin-bottom: 64px;
 }
 
 .platform-page .ios-faq-block .card-header {
@@ -1384,7 +1411,7 @@ ul.footer-bottom-nav .dropdown-menu {
 
 @media screen and (max-width: 768px) {
     .features-ios-block {
-        padding: 40px 0;
+        padding: 48px 0;
     }
 
     .platform-page .first-block-left h1 {
@@ -1436,7 +1463,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .platform-page .advantages-ios-block, .platform-page .compatible-ios-block, .platform-page .how-work-ios-block, .platform-page .ios-faq-block {
-        padding: 40px 0;
+        padding: 48px 0;
     }
 
     .platform-page .compatible-ios-block .row {
@@ -1471,7 +1498,7 @@ ul.footer-bottom-nav .dropdown-menu {
     }
 
     .container-fluid.ios-faq-block {
-        padding-top: 60px;
+        padding-top: 48px;
     }
 
     .platform-page .ios-faq-block button.question:after {
@@ -1498,7 +1525,7 @@ ul.footer-bottom-nav .dropdown-menu {
         font-size: 13px;
     }
 
-    .slick-slide{
+    .slick-slide {
         width: 300px !important;
         padding: 0 10px !important;
     }
