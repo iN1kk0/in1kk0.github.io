@@ -127,7 +127,8 @@ a.navbar-brand.logo {
 }
 
 .dropdown-item {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 8px 0 8px 16px;
 }
 
 .navbar-light .navbar-toggler {
