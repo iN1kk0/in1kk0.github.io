@@ -48,7 +48,7 @@
                     <a class="nav-link" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="/umobix/features.html">Features</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FAQ</a>
@@ -867,6 +867,28 @@
         </div>
     </div>
 </footer>
+
+<a onclick="topFunction()" href="#" id="to_top"><img src="img/fe_arrow-up.svg"></a>
+<script>
+    mybutton = document.getElementById("to_top");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <script type="text/javascript" src="js/slick.min.js"></script>
