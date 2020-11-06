@@ -1757,6 +1757,10 @@ img.icons-device-android.desc-block {
     /*.features-page .faq-block {
         padding: 48px 0;
     }*/
+    .features-first-block .view {
+        background-image: url("../img/bg-features-mobile.png") !important;
+    }
+
     .features-page .first-block-right h1 {
         font-style: normal;
         font-weight: bold;
