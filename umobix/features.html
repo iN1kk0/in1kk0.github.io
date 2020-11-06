@@ -172,8 +172,8 @@
             <li><a href="#">Browser history</a></li>
             <li><a href="#">Notifications</a></li>
             <li class="last-item"><a href="#">Device info</a></li>
-            <li class="close">Close</li>
         </ul>
+        <div class="close-menu">Close</div>
     </div>
 </div>
 <div class="container features-blocks features-blocks-1">
@@ -184,7 +184,7 @@
         <div class="col-9">
             <div class="row">
                 <div class="col-4 feature-img-block">
-                    <img src="img/calls-features.png">
+                    <img src="img/calls-features-new.png">
                 </div>
                 <div class="col-8 feature-content-block">
                     <img class="mob-block mobile-features-icon" src="img/calls.svg">
@@ -222,7 +222,7 @@
                             href="#"><img src="img/features-icon-apple.svg"></a>
                     </div>
                     <div class="col-4 feature-img-block">
-                        <img src="img/features-sms.png">
+                        <img src="img/features-sms-new.png">
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@
         <div class="col-9">
             <div class="row">
                 <div class="col-4 feature-img-block">
-                    <img src="img/features-fb.png">
+                    <img src="img/features-fb-new.png">
                 </div>
                 <div class="col-8 feature-content-block">
                     <img class="mob-block mobile-features-icon" src="img/social.svg">
@@ -271,7 +271,7 @@
                         <a href="#" style="margin-right: 20px;"><img src="img/features-icon-android.svg"></a>
                     </div>
                     <div class="col-4 feature-img-block">
-                        <img src="img/features-android-gps.png">
+                        <img src="img/features-android-gps-new.png">
                     </div>
                 </div>
             </div>
@@ -286,7 +286,7 @@
         <div class="col-9">
             <div class="row">
                 <div class="col-4 feature-img-block">
-                    <img src="img/features-android-keylogger.png">
+                    <img src="img/features-android-keylogger-new.png">
                 </div>
                 <div class="col-8 feature-content-block">
                     <img class="mob-block mobile-features-icon" src="img/keyboard.svg">
@@ -319,7 +319,7 @@
                         <a href="#" style="margin-right: 20px;"><img src="img/features-icon-android.svg"></a>
                     </div>
                     <div class="col-4 feature-img-block">
-                        <img src="img/features-android-photo.png">
+                        <img src="img/features-android-photo-new.png">
                     </div>
                 </div>
             </div>
@@ -334,7 +334,7 @@
         <div class="col-9">
             <div class="row">
                 <div class="col-4 feature-img-block">
-                    <img src="img/features-history.png">
+                    <img src="img/features-history-new.png">
                 </div>
                 <div class="col-8 feature-content-block">
                     <img class="mob-block mobile-features-icon" src="img/browser-history-features.svg">
@@ -903,6 +903,7 @@
             $('.mobile-bg-shade').toggleClass('active');
             $('.side-menu-features').toggleClass('active');
             $('.side-menu-features > ul').toggle();
+            $('.side-menu-features .close-menu').toggle();
         });
 
         $('.side-menu-features li.has-submenu').on('click', function () {
@@ -910,10 +911,11 @@
             $(this).toggleClass('active');
         });
 
-        $('.side-menu-features ul li.close').on('click', function () {
+        $('.side-menu-features .close-menu').on('click', function () {
             $('.mobile-bg-shade').toggleClass('active');
             $('.side-menu-features').toggleClass('active');
             $('.side-menu-features > ul').toggle();
+            $('.side-menu-features .close-menu').toggle();
         });
 
     });
